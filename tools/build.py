@@ -350,45 +350,65 @@ def footer(page, scripts=()):
 </html>
 """
 
+def split_line(text):
+    """The headline parts at the doorway: the break falls after the comma nearest the middle."""
+    words = text.split()
+    cuts = [i + 1 for i, w in enumerate(words[:-1]) if w.endswith(",")] or [len(words) // 2]
+    i = min(cuts, key=lambda c: abs(c - len(words) / 2))
+    return " ".join(words[:i]), " ".join(words[i:])
+
+
 def film_hero():
+    """'The gate opens': a limewash wall with one arched doorway. Desktop scrubs the walk-in film inside it,
+    phones and portrait tablets open the same arch over the portrait still and loop, reduced motion keeps it still."""
     h = T["home"]
     film, start = G["film-walk-in"], G["film-walk-in-start"]
     loop = G["loop-walkway"]
+    a, b = split_line(h["heroLine"])
     return f"""<section class="film" id="top" data-film data-film-src="assets/{film["file"]}" aria-labelledby="hero-title">
   <div class="film-stage">
-    <div class="film-media" data-kind="motion" aria-hidden="true">
-      <div class="film-static" data-space="compound">
-        {img(M["covers"]["compound"], "film-still", eager=True)}
-        <img class="film-still-wide" alt="" data-img="film-walk-in-start" data-kind="motion" loading="lazy" decoding="async"
-          src="assets/{start["file"]}" width="{start["width"]}" height="{start["height"]}">
-        <video class="film-loop" muted loop playsinline preload="none" tabindex="-1"
-          data-img="loop-walkway" data-kind="motion" data-src="assets/{loop["file"]}"></video>
+    <div class="gate-wall" aria-hidden="true"><div class="gate-floor"></div></div>
+    <div class="gate-ring" aria-hidden="true"></div>
+    <div class="gate-arch">
+      <div class="gate-view">
+        <div class="film-media" data-kind="motion" aria-hidden="true">
+          <div class="film-static" data-space="compound">
+            {img(M["covers"]["compound"], "film-still", eager=True)}
+            <img class="film-still-wide" alt="" data-img="film-walk-in-start" data-kind="motion" loading="lazy" decoding="async"
+              src="assets/{start["file"]}" width="{start["width"]}" height="{start["height"]}">
+            <video class="film-loop" muted loop playsinline preload="none" tabindex="-1"
+              data-img="loop-walkway" data-kind="motion" data-src="assets/{loop["file"]}"></video>
+          </div>
+          <img class="film-poster" alt="" data-img="film-walk-in-start" data-kind="motion"
+            data-src="assets/{start["file"]}" width="{start["width"]}" height="{start["height"]}">
+          <canvas class="film-canvas"></canvas>
+          <div class="scrim"></div>
+          <div class="film-dusk"></div>
+        </div>
       </div>
-      <img class="film-poster" alt="" data-img="film-walk-in-start" data-kind="motion"
-        data-src="assets/{start["file"]}" width="{start["width"]}" height="{start["height"]}">
-      <canvas class="film-canvas"></canvas>
-      <div class="scrim"></div>
+      <div class="gate-depth" aria-hidden="true"></div>
     </div>
+    <div class="gate-step" aria-hidden="true"></div>
     <div class="film-ring" aria-hidden="true">
       <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="20" /></svg>
       <span>{e(U["filmLoading"])}</span>
     </div>
-    <div class="band band-1" data-band="0,0.3">
-      <p class="kicker chip">{e(U["heroKicker"])}</p>
-      <h1 id="hero-title" class="band-title" data-split>{e(h["heroLine"])}</h1>
-      <a class="cue" href="#story">{e(U["scrollCue"])}<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></a>
-      <p class="film-opt" hidden><button type="button" class="chip film-opt-btn" aria-pressed="false"
-        data-on="{e(U["filmOptOut"])}" data-off="{e(U["filmOptIn"])}">{icon("play")}<span>{e(U["filmOptIn"])}</span></button>
-        <small>{e(U["filmOptHint"])}</small></p>
+    <div class="band band-1" data-band="0,0.34">
+      <p class="kicker hero-kicker">{e(U["heroKicker"])}</p>
+      <h1 id="hero-title" class="hero-title"><span class="hl hl-a">{e(a)}</span> <span class="hl hl-b">{e(b)}</span></h1>
+      <a class="cue" href="#spaces">{e(U["scrollCue"])}<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></a>
     </div>
-    <div class="band band-2" data-band="0.36,0.62" data-entrance="drift">
+    <div class="band band-2" data-band="0.47,0.69" data-entrance="drift">
       <p class="band-line" data-split>{e(h["filmBand2"])}</p>
     </div>
-    <div class="band band-3" data-band="0.68,1" data-entrance="settle">
+    <div class="band band-3" data-band="0.73,1" data-entrance="settle">
       <p class="band-line" data-split>{e(h["filmBand3"])}</p>
       <p class="band-sub">{e(h["heroSub"])}</p>
       <p class="band-cta"><a class="btn btn-warm" href="#spaces">{e(h["heroCta"])}{icon("arrow")}</a></p>
     </div>
+    <p class="film-opt" hidden><button type="button" class="chip film-opt-btn" aria-pressed="false"
+      data-on="{e(U["filmOptOut"])}" data-off="{e(U["filmOptIn"])}">{icon("play")}<span>{e(U["filmOptIn"])}</span></button>
+      <small>{e(U["filmOptHint"])}</small></p>
     <p class="film-note chip">{e(U["filmNote"])}</p>
   </div>
 </section>"""
@@ -416,14 +436,43 @@ def story():
   </div>
 </section>"""
 
+def door_rooms(s, n=3):
+    """The cover plus the next featured photos from other rooms: what a door flips through on hover."""
+    keys, areas = [M["covers"][s]], {P[M["covers"][s]]["area"]}
+    for k in M["featured"][s]:
+        if len(keys) == n:
+            break
+        if P[k]["area"] not in areas:
+            keys.append(k)
+            areas.add(P[k]["area"])
+    return keys
+
+
+def bath_count(v):
+    m = re.match(r"\s*([\d.]+)", v or "")
+    return e(m.group(1)) if m else None
+
+
 def doors():
     cards = []
     for n, s in enumerate(SPACES, 1):
         sp, st = T["spaces"][s], S["spaces"][s]
-        alt_key = next(k for k in M["featured"][s][1:] if P[k]["area"] != P[M["covers"][s]]["area"])
-        cards.append(f"""<article class="door door-{s}" data-space="{s}" style="--accent:{M["accents"][s]}">
+        rooms = door_rooms(s)
+        pics = "".join(img(k, "door-img" + (" on" if i == 0 else ""), extra='' if i == 0 else 'aria-hidden="true"')
+                       for i, k in enumerate(rooms))
+        labels = "".join(f'<li{" class=on" if i == 0 else ""}>{e(U["areas"].get(P[k]["area"], P[k]["area"]))}</li>'
+                         for i, k in enumerate(rooms))
+        baths = bath_count(st["baths"])
+        quick = (f'<dl class="door-quick" aria-hidden="true">'
+                 f'<div><dt>{e(U["sleeps"])}</dt><dd>{st["guests"]}</dd></div>'
+                 f'<div><dt>{e(U["bedrooms"])}</dt><dd>{st["bedrooms"]}</dd></div>'
+                 f'<div><dt>{e(U["baths"])}</dt><dd>{baths if baths else tbu(sp["name"] + ": bathrooms")}</dd></div></dl>')
+        cards.append(f"""<article class="door door-{s}" data-space="{s}" data-door style="--accent:{M["accents"][s]};--i:{n - 1}">
       <a class="door-link" href="{link(s)}">
-        <div class="arch door-arch">{img(M["covers"][s])}{img(alt_key, "door-alt", extra='aria-hidden="true"')}</div>
+        <div class="arch door-arch">{pics}
+          <div class="door-flip" aria-hidden="true"><ol class="door-rooms">{labels}</ol><span class="door-ticks">{"<i></i>" * len(rooms)}</span></div>
+          {quick}
+        </div>
         <div class="door-body">
           <span class="door-no" aria-hidden="true">0{n}</span>
           <h3 class="door-name">{e(sp["name"])}</h3>
@@ -436,6 +485,8 @@ def doors():
         </div>
       </a>
     </article>""")
+    dots = "".join(f'<button type="button" class="dot" data-dot="{i}" aria-label="{e(U["doorsDotGo"])}: {e(T["spaces"][s]["name"])}"'
+                   f'{" aria-current=true" if i == 0 else ""}><i></i></button>' for i, s in enumerate(SPACES))
     return f"""<section class="doors" id="spaces" aria-labelledby="spaces-title">
   {suggest_btn(U["spacesTitle"])}
   <div class="wrap doors-head reveal">
@@ -443,7 +494,8 @@ def doors():
     <h2 id="spaces-title" class="h-display">{e(U["spacesTitle"])}</h2>
     <p class="lede">{e(U["spacesIntro"])}</p>
   </div>
-  <div class="doors-row" role="list">{"".join(c.replace("<article", '<article role="listitem"', 1) for c in cards)}</div>
+  <div class="doors-row" role="list" data-doors>{"".join(c.replace("<article", '<article role="listitem"', 1) for c in cards)}</div>
+  <div class="doors-dots" role="group" aria-label="{e(U["doorsDots"])}">{dots}</div>
   <p class="wrap doors-note">{e(U["ratingNote"])} {e(S["ratingsAsOf"])}.</p>
 </section>"""
 
@@ -591,7 +643,7 @@ def jsonld():
 
 
 def home_main():
-    return film_hero() + story() + doors() + compound() + finder() + neighbourhood() + good_to_know() + faq()
+    return film_hero() + doors() + story() + compound() + finder() + neighbourhood() + good_to_know() + faq()
 
 
 def page_home():
@@ -653,25 +705,61 @@ def space_story(s):
 </section>"""
 
 
+CHAPTER_SHOW = 8   # photos shown per room before "Show all"
+
+
 def gallery(s):
+    """Photos grouped into room chapters, in the handover's room order. Long chapters fold after eight."""
     keys = gallery_keys(s)
     areas = [a for a in M["areaOrder"][s] if any(P[k]["area"] == a for k in keys)]
-    tabs = [f'<button type="button" class="tab" aria-pressed="true" data-area="all">{e(U["photosAll"])} <span>{len(keys)}</span></button>']
-    tabs += [f'<button type="button" class="tab" aria-pressed="false" data-area="{a}">{e(U["areas"].get(a, a))} '
-             f'<span>{sum(P[k]["area"] == a for k in keys)}</span></button>' for a in areas]
-    items = "".join(f'<li class="shot" data-area="{P[k]["area"]}"><button type="button" class="shot-btn" data-lb="{i}" '
-                    f'aria-label="{e(U["photosHeading"])}: {e(alt_for(k))}">'
-                    f'{img(k)}</button></li>' for i, k in enumerate(keys))
+    index, chapters = [], []
+    for n, a in enumerate(areas, 1):
+        ks = [k for k in keys if P[k]["area"] == a]
+        name = e(U["areas"].get(a, a))
+        count = U["chapterCountOne"] if len(ks) == 1 else U["chapterCount"].replace("{n}", str(len(ks)))
+        index.append(f'<li><a href="#photos-{a}"><span aria-hidden="true">0{n}</span>{name}</a></li>')
+        shots = "".join(f'<li class="shot"{" data-extra hidden" if i >= CHAPTER_SHOW else ""}><button type="button" class="shot-btn" '
+                        f'aria-label="{e(U["photosHeading"])}: {e(alt_for(k))}">{img(k)}</button></li>'
+                        for i, k in enumerate(ks))
+        more = (f'<button type="button" class="btn btn-ghost btn-small chapter-more" aria-expanded="false" '
+                f'data-more="{e(U["chapterMore"].replace("{n}", str(len(ks))))}" data-less="{e(U["chapterLess"])}">'
+                f'{e(U["chapterMore"].replace("{n}", str(len(ks))))}</button>') if len(ks) > CHAPTER_SHOW else ""
+        chapters.append(f"""<section class="chapter" id="photos-{a}" aria-labelledby="ch-{a}">
+        <header class="chapter-head"><span class="chapter-no" aria-hidden="true">0{n}</span>
+          <h3 id="ch-{a}">{name}</h3><p>{e(count)}</p></header>
+        <ul class="masonry">{shots}</ul>{more}
+      </section>""")
     return f"""<section class="sp-gallery" id="photos" aria-labelledby="photos-h">
   {suggest_btn(U["photosHeading"])}
   <div class="wrap">
     <header class="gallery-head">
       <h2 id="photos-h" class="h-section">{e(U["photosHeading"])}</h2>
-      <div class="tabs" role="group" aria-label="{e(U["photosHeading"])}">{"".join(tabs)}</div>
+      <nav class="chapter-index" aria-label="{e(U["chaptersJump"])}"><ul>{"".join(index)}</ul></nav>
     </header>
-    <ul class="masonry" data-space="{s}" data-gallery>{items}</ul>
+    <div class="chapters" data-space="{s}" data-gallery>{"".join(chapters)}</div>
   </div>
 </section>"""
+
+
+def summary_card(s):
+    """Sticky booking summary beside the content on desktop (phones use the book bar)."""
+    sp, st = T["spaces"][s], S["spaces"][s]
+    min_n = st["minNights"] or S["minNightsDefault"]
+    return f"""<aside class="sp-aside" aria-label="{e(U["summaryTitle"])}">
+  <div class="sum-card">
+    <p class="kicker">{e(U["summaryTitle"])}</p>
+    <p class="sum-name">{e(sp["name"])}</p>
+    <p class="sum-price"><b>{money(st["nightly"], f'{sp["name"]}: nightly price')}</b> <span>{e(U["booking"]["perNight"])}</span></p>
+    <dl class="sum-facts">
+      <div><dt>{e(U["sleeps"])}</dt><dd>{st["guests"]}</dd></div>
+      <div><dt>{e(U["bedrooms"])}</dt><dd>{st["bedrooms"]}</dd></div>
+      <div><dt>{e(U["booking"]["minStay"])}</dt><dd>{f'{min_n} {e(U["booking"]["nights"])}' if min_n else tbu(f'{sp["name"]}: minimum nights')}</dd></div>
+    </dl>
+    <a class="btn btn-accent sum-btn" href="#book">{e(U["nav"]["book"])}{icon("arrow")}</a>
+    <p class="sum-rating">{rating_html(s)}</p>
+    <p class="preview-pill">{e(T["site"]["previewLabel"])}</p>
+  </div>
+</aside>"""
 
 
 def space_details(s):
@@ -743,7 +831,8 @@ def space_main(s):
            f'{e(U["booking"]["perNight"])}</p><a class="btn btn-accent" href="#book">{e(U["nav"]["book"])}</a></div>')
     return (space_hero(s, SPACES.index(s) + 1)
             + f'<nav class="subnav" aria-label="{e(sp["name"])}"><ul>{sub}</ul></nav>'
-            + space_story(s) + gallery(s) + space_details(s) + booking(s) + next_door(s) + bar)
+            + '<div class="sp-layout"><div class="sp-main">' + space_story(s) + gallery(s) + space_details(s)
+            + "</div>" + summary_card(s) + "</div>" + booking(s) + next_door(s) + bar)
 
 
 def page_space(s):

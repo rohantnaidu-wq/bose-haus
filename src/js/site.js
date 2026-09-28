@@ -29,12 +29,18 @@
   /* ---------- nav: solid after the hero, mobile drawer ---------- */
   const nav = $('[data-nav]');
   const hero = $('[data-film]');
+  let film = null;                                   // the hero engine, set once it exists (below)
+  // Solid after the hero. Over the limewash wall the nav turns ink, until the doorway has opened.
   function navState() {
     if (!nav) return;
-    const scrub = document.documentElement.classList.contains('scrub');
-    const edge = hero && hero.offsetParent ? (scrub ? hero.offsetHeight - innerHeight * 1.05 : innerHeight * 0.6) : 10;
-    const solid = scrollY > Math.max(10, edge);
+    const home = hero && hero.offsetParent;
+    const moving = film && film.mode();
+    const tone = moving ? film.tone() : 'ink';     // ink over the wall, glass while the arch crosses the nav, clear over the film
+    const edge = home ? hero.offsetHeight - (moving ? innerHeight * 1.05 : nav.offsetHeight) : 10;
+    const solid = scrollY > Math.max(10, edge) || (!!home && tone === 'glass');
+    const ink = !solid && !!home && tone === 'ink';
     if (solid !== nav.classList.contains('solid')) nav.classList.toggle('solid', solid);
+    if (ink !== nav.classList.contains('ink')) nav.classList.toggle('ink', ink);
   }
   addEventListener('scroll', navState, { passive: true });
   navState();
@@ -76,6 +82,7 @@
     if (reduced.matches) return;
     $$('.reveal,.doors-row', scope).forEach(el => {
       if (el.classList.contains('in')) return;
+      if (el.matches('.doors-row') && innerWidth >= 1100) return;   // desktop doors rise with the scroll instead
       const r = el.getBoundingClientRect();
       if (r.height && r.top > innerHeight * 0.95) { el.classList.add('pre'); revealIO.observe(el); }
     });
@@ -85,8 +92,19 @@
   /* ---------- scroll-drawn lines: the brick path in the story, the route, the story photo lift ---------- */
   const drawn = $$('.story,.hood').map(sec => ({ sec, target: sec.querySelector('.path-line') || sec.querySelector('.route') }));
   const lift = $('.story-photo');
+  const doorRow = $('[data-doors]'), doorEls = doorRow ? $$('.door', doorRow) : [];
   let drawCache = new Map();
   function drawLines() {
+    // desktop: the five doors rise into place as the walk ends, largest first (scroll-driven, reversible)
+    if (doorRow && doorRow.offsetParent) {
+      const still = reduced.matches || innerWidth < 1100;
+      const top = doorRow.getBoundingClientRect().top;
+      doorEls.forEach((d, i) => {
+        const k = still ? 1 : clamp((innerHeight - top) / (innerHeight * 0.5) - i * 0.12, 0, 1);
+        const v = (1 - (1 - k) ** 3).toFixed(3);
+        if (drawCache.get(d) !== v) { drawCache.set(d, v); d.style.setProperty('--rise', v); }
+      });
+    }
     for (const { sec, target } of drawn) {
       if (!target) continue;
       const r = sec.getBoundingClientRect();
@@ -129,9 +147,12 @@
     el.append(sr, vis);
   });
 
-  /* ---------- the walk-in film ----------
-     The Higgsfield file has a single keyframe, so seeking it would stutter. Instead it is
-     decoded once into JPEG frames (requestVideoFrameCallback) and a canvas scrubs through them.
+  /* ---------- the hero: the gate opens ----------
+     A limewash wall with one arched doorway. Scrolling scales the arch open (transform only) while
+     the view inside counter-scales, so the walk-in film stays still and the doorway grows around it.
+       scrub  (desktop): the walk-in film (-g 8 encode), seek-scrubbed with gated seeks, 560vh
+       reveal (phones, portrait tablets): the same opening over the portrait still and loop, 280vh; the film never loads
+       static (reduced motion, no JS): the still composition in CSS
      The five static-hero gates below match the skill's list exactly and are re-checked live. */
   const GATES = [
     '(max-width: 720px)',
@@ -141,41 +162,73 @@
     '(prefers-reduced-motion: reduce)'
   ];
   const MQLS = GATES.map(q => matchMedia(q));
+  const easeIO = t => (t < 0.5 ? 4 * t * t * t : 1 - (-2 * t + 2) ** 3 / 2);
   const Film = (() => {
     if (!hero) return null;
+    const stage = $('.film-stage', hero), arch = $('.gate-arch', hero), view = $('.gate-view', hero);
     const canvas = $('.film-canvas', hero), ctx = canvas.getContext('2d');
     const poster = $('.film-poster', hero), ringEl = $('.film-ring', hero);
-    const bands = $$('.band', hero).map((el, i, all) => {
+    const halves = $$('.hl', hero);
+    const bands = $$('.band', hero).slice(1).map(el => {
       const [a, b] = el.dataset.band.split(',').map(Number);
-      return { el, a, b, first: i === 0, last: i === all.length - 1, o: -1, k: -1, ks: -1, kb: -1 };
+      return { el, a, b, last: el.classList.contains('band-3') };
     });
-    let frames = [], cache = new Map(), drawn = -1, wanted = 0, busy = false;
-    let started = false, on = false, visible = true, target = 0, shown = 0, raf = null, last = 0, pCache = '';
-    const loadStart = performance.now();
-
+    // how far the doorway opens, as a share of the scroll through the hero
+    const CFG = { scrub: { open: [0.06, 0.44], axis: 'x' }, reveal: { open: [0.03, 0.5], axis: 'y', settle: [0.6, 1] } };
+    let mode = '', geo = null, started = false, visible = true, target = 0, shown = 0, raf = null, last = 0, loadStart = null, tone = 'ink';
+    let vars = new WeakMap();
+    // delta-gated custom property writes: nothing touches the DOM unless the value really moved
+    function put(el, prop, v, gate, unit = '') {
+      let c = vars.get(el);
+      if (!c) vars.set(el, c = {});
+      if (c[prop] !== undefined && Math.abs(c[prop] - v) <= gate) return;
+      c[prop] = v;
+      el.style.setProperty(prop, unit ? v.toFixed(1) + unit : v.toFixed(4));
+    }
     const ring = f => ringEl.style.setProperty('--ld', Math.round(126 * (1 - clamp(f, 0, 1))));
     function progress() {
       const r = hero.getBoundingClientRect();
-      return clamp(-r.top / Math.max(1, hero.offsetHeight - innerHeight), 0, 1);
+      return clamp(-r.top / Math.max(1, hero.offsetHeight - stage.offsetHeight), 0, 1);
+    }
+    function measure() {
+      const W = stage.clientWidth, H = stage.clientHeight;
+      const aw = arch.offsetWidth, ah = arch.offsetHeight, ax = arch.offsetLeft, ay = arch.offsetTop;
+      const cx = ax + aw / 2, cy = ay + ah / 2;
+      // the smallest scale at which the arch (round top included) covers all four corners of the screen
+      const covers = (s, x, y) => {
+        const dx = x - cx, dy = y - cy, r = s * aw / 2, top = s * (aw / 2 - ah / 2);
+        return Math.abs(dx) <= r && dy <= s * ah / 2 && (dy >= top || dx * dx + (dy - top) ** 2 <= r * r);
+      };
+      const least = pts => {
+        const ok = s => pts.every(([x, y]) => covers(s, x, y));
+        let lo = 1, hi = 60;
+        for (let i = 0; i < 32; i++) { const m = (lo + hi) / 2; if (ok(m)) hi = m; else lo = m; }
+        return hi;
+      };
+      const navH = nav ? nav.offsetHeight : 64;
+      geo = { aw, ah, sEnd: least([[0, 0], [W, 0], [0, H], [W, H]]) * 1.04, col: halves[0] ? halves[0].offsetWidth : 300,
+        sNavIn: Math.max(1, (cy - navH) / (ah / 2)),                // the arch top reaches the nav bar
+        sNavOut: least([[0, navH], [W, navH]]) };                     // the whole nav bar sits over the film
+      Object.assign(view.style, { width: W + 'px', height: H + 'px', left: -ax + 'px', top: -ay + 'px', transformOrigin: `${cx}px ${cy}px` });
     }
     function size() {
       const dpr = Math.min(1.5, devicePixelRatio || 1);
       const w = Math.round(canvas.clientWidth * dpr), h = Math.round(canvas.clientHeight * dpr);
-      if (canvas.width !== w || canvas.height !== h) { canvas.width = w; canvas.height = h; drawn = -1; }
+      if (w && (canvas.width !== w || canvas.height !== h)) { canvas.width = w; canvas.height = h; return true; }
+      return false;
     }
-    function paint(src, iw = src.width, ih = src.height) {
+    function paint(src, iw, ih) {
       const cw = canvas.width, ch = canvas.height, s = Math.max(cw / iw, ch / ih);
-      const w = iw * s, h = ih * s;
-      ctx.drawImage(src, (cw - w) / 2, (ch - h) / 2, w, h);
+      ctx.drawImage(src, (cw - iw * s) / 2, (ch - ih * s) / 2, iw * s, ih * s);
     }
-    // Fallback for browsers without requestVideoFrameCallback: seek the (-g 8) video directly, one seek at a time
-    let seekVideo = null, seekBusy = false, seekNext = null, lastT = -1;
+    // gated seeks: one in flight, the newest target coalesced, the error path resets the gate
+    let video = null, seekBusy = false, seekNext = null, lastT = -1;
     function seekTo(t) {
       if (seekBusy) { seekNext = t; return; }
-      seekBusy = true; lastT = t; seekVideo.currentTime = t;
+      seekBusy = true; lastT = t; video.currentTime = t;
     }
     function armSeek(v) {
-      seekVideo = v;
+      video = v;
       v.addEventListener('seeked', () => {
         paint(v, v.videoWidth, v.videoHeight);
         seekBusy = false;
@@ -183,54 +236,56 @@
       });
       v.addEventListener('error', () => { seekBusy = false; seekNext = null; });
     }
-    async function draw() {
-      if (busy || !frames.length) return;
-      const i = wanted;
-      if (i === drawn) return;
-      busy = true;
-      try {
-        let bmp = cache.get(i);
-        if (!bmp) {
-          bmp = await createImageBitmap(frames[i]);
-          cache.set(i, bmp);
-          if (cache.size > 18) { const k = cache.keys().next().value; cache.get(k).close?.(); cache.delete(k); }
-        }
-        paint(bmp);
-        drawn = i;
-      } finally { busy = false; }
-      if (wanted !== drawn) draw();
-    }
 
-    function bandsAt(p, now) {
-      const loadK = clamp((now - loadStart) / 1400, 0, 1);
+    function bandsAt(p) {
       for (const b of bands) {
-        const f = Math.min(0.03, (b.b - b.a) / 3);
-        let o = (b.first ? 1 : smooth(p, b.a, b.a + f)) * (b.last ? 1 : 1 - smooth(p, b.b - f, b.b));
-        if (b.last && p < b.a) o = 0;
-        let k = clamp((p - b.a) / (b.last ? 0.16 : 0.07), 0, 1);
-        if (b.first) k = Math.max(k, 1 - (1 - loadK) ** 3);
-        const put = (key, prop, v, gate) => { if (Math.abs(b[key] - v) > gate) { b[key] = v; b.el.style.setProperty(prop, v.toFixed(3)); } };
-        put('o', '--o', o, 0.004);
-        put('k', '--k', k, 0.008);
-        if (b.last) { put('ks', '--ks', clamp((k - 0.45) * 3, 0, 1), 0.008); put('kb', '--kb', clamp((k - 0.7) * 4, 0, 1), 0.008); }
+        let a = b.a, z = b.b;
+        if (mode === 'reveal') { if (!b.last) continue; [a, z] = CFG.reveal.settle; }
+        const f = Math.min(0.03, (z - a) / 3);
+        const o = p < a ? 0 : smooth(p, a, a + f) * (b.last ? 1 : 1 - smooth(p, z - f, z));
+        const k = clamp((p - a) / (b.last ? 0.16 : 0.07), 0, 1);
+        put(b.el, '--o', o, 0.004);
+        put(b.el, '--k', k, 0.008);
+        if (b.last) { put(b.el, '--ks', clamp((k - 0.45) * 3, 0, 1), 0.008); put(b.el, '--kb', clamp((k - 0.7) * 4, 0, 1), 0.008); }
         const vis = o > 0.02 ? '' : 'hidden';
         if (b.el.style.visibility !== vis) b.el.style.visibility = vis;
       }
     }
+    function frame(p, now) {
+      const c = CFG[mode];
+      const lk = 1 - (1 - clamp((now - loadStart) / 1200, 0, 1)) ** 3;   // one-time load ramp: the words step out of the doorway
+      const e = easeIO(clamp((p - c.open[0]) / (c.open[1] - c.open[0]), 0, 1));
+      const s = 1 + (geo.sEnd - 1) * e;
+      put(stage, '--s', s, 0.0004);
+      put(stage, '--z', 1.1 - 0.1 * e, 0.0004);
+      put(stage, '--deco', 1 - smooth(e, 0.15, 0.6), 0.004);
+      // the opening door pushes the two halves of the headline aside and they fade as they go
+      const push = (s - 1) * (c.axis === 'x' ? geo.aw : geo.ah) / 2;
+      const room = c.axis === 'x' ? geo.col : 140;
+      const ho = lk * (1 - smooth(push, room * 0.12, room * 0.7));
+      for (const h of halves) { put(h, '--tx', push - (1 - lk) * 36, 0.25, 'px'); put(h, '--ho', ho, 0.004); }
+      put(stage, '--ko', lk * (1 - smooth(e, 0.02, 0.2)), 0.004);
+      put(stage, '--dusk', 0.85 * smooth(p, 0.78, 1), 0.004);
+      put(stage, '--note', smooth(e, 0.75, 1) * (1 - smooth(p, 0.9, 1)), 0.004);
+      bandsAt(p);
+      const was = tone;
+      tone = s < geo.sNavIn ? 'ink' : s < geo.sNavOut ? 'glass' : 'clear';
+      if (tone !== was) navState();
+    }
     function tick(now) {
       const dt = Math.min(100, now - (last || now)); last = now;
       shown += (target - shown) * (1 - Math.pow(1 - 0.14, dt / 16.667));
-      const settledLoad = now - loadStart > 1500;
-      if (Math.abs(target - shown) < 0.0005 && settledLoad) { shown = target; raf = null; last = 0; }
+      const loading = now - loadStart < 1300;
+      if (Math.abs(target - shown) < 0.0005 && !loading) { shown = target; raf = null; last = 0; }   // converged: rest
       else raf = requestAnimationFrame(tick);
-      if (frames.length) { wanted = Math.round(shown * (frames.length - 1)); draw(); }
-      else if (seekVideo && seekVideo.duration) { const t = shown * (seekVideo.duration - 0.05); if (Math.abs(t - lastT) > 0.02) seekTo(t); }
-      const p = shown.toFixed(3);
-      if (p !== pCache) { pCache = p; hero.style.setProperty('--p', p); }
-      bandsAt(shown, now);
+      if (mode === 'scrub' && video && video.duration) {
+        const t = shown * (video.duration - 0.05);
+        if (Math.abs(t - lastT) > 0.01) seekTo(t);
+      }
+      frame(shown, now);
     }
     function onScroll() {
-      if (!on) return;                 // still-hero mode: the drive stays off
+      if (!mode) return;
       target = progress();
       if (raf === null && visible) raf = requestAnimationFrame(tick);
     }
@@ -242,13 +297,13 @@
       let watchdog = setTimeout(() => ctrl.abort(), 20000);
       const res = await fetch(src, { signal: ctrl.signal, priority: 'low' });
       if (!res.ok || !res.body) throw new Error('film ' + res.status);
-      const total = Number(res.headers.get('Content-Length')) || 5.6e6;   // the -g 8 web encode is about 5.3 MB
+      const total = Number(res.headers.get('Content-Length')) || 5597797;   // the -g 8 web encode
       const reader = res.body.getReader(), chunks = [];
       let got = 0, lastRing = 0;
       for (;;) {
         const { done, value } = await reader.read();
         if (done) break;
-        clearTimeout(watchdog); watchdog = setTimeout(() => ctrl.abort(), 20000);
+        clearTimeout(watchdog); watchdog = setTimeout(() => ctrl.abort(), 20000);   // 20s without progress aborts
         chunks.push(value); got += value.length;
         const now = performance.now();
         if (now - lastRing > 100) { lastRing = now; ring(0.95 * got / total); }
@@ -257,8 +312,6 @@
       ring(0.95);
       await decode(URL.createObjectURL(new Blob(chunks, { type: 'video/mp4' })));
     }
-    // The film is encoded with a keyframe every 8 frames (-g 8), so seeking it directly is smooth.
-    // Frames are painted to the canvas on each 'seeked'; seeks are gated so they never pile up.
     function decode(url) {
       return new Promise((resolve, reject) => {
         const v = document.createElement('video');
@@ -268,6 +321,7 @@
         v.addEventListener('error', () => { clearTimeout(t); reject(new Error('video error')); }, { once: true });
       });
     }
+    // Poster first, then the film: the poster wins the bandwidth race, the film streams behind the ring.
     function initOnce() {
       if (started) return;
       started = true;
@@ -275,10 +329,8 @@
       const begin = () => {
         if (go) return; go = true;
         load().then(() => {
-          ring(1); size(); drawn = -1; hero.classList.add('ready');
-          if (frames.length) { wanted = Math.round(progress() * (frames.length - 1)); draw(); }
-          else if (seekVideo) seekTo(progress() * (seekVideo.duration - 0.05));
-          navState();
+          ring(1); size(); hero.classList.add('ready');
+          seekTo(progress() * (video.duration - 0.05));
         }).catch(() => hero.classList.add('failed'));
       };
       poster.addEventListener('load', begin, { once: true });
@@ -287,51 +339,62 @@
       setTimeout(begin, 4000);
     }
     addEventListener('resize', () => {
-      if (!on) return;
-      size();
-      if (seekVideo && seekVideo.readyState >= 2) paint(seekVideo, seekVideo.videoWidth, seekVideo.videoHeight); else draw();
+      if (!mode) return;
+      measure();
+      if (size() && video && video.readyState >= 2) paint(video, video.videoWidth, video.videoHeight);
+      frame(shown, performance.now());
     });
     return {
-      enable() {
-        if (on) return; on = true;
-        document.documentElement.classList.add('scrub');
-        initOnce(); size();
-        bands.forEach(b => { b.o = b.k = b.ks = b.kb = -1; });
+      mode: () => mode,
+      tone: () => tone,
+      enable(m) {
+        if (mode === m) return;
+        if (mode) this.disable();
+        mode = m;
+        document.documentElement.classList.add(m);
+        if (loadStart === null) loadStart = performance.now();
+        if (m === 'scrub') initOnce();
+        measure(); size();
         addEventListener('scroll', onScroll, { passive: true });
-        onScroll();
+        shown = target = progress();
+        if (raf === null) raf = requestAnimationFrame(tick);
       },
       disable() {
-        if (!on) return; on = false;
-        document.documentElement.classList.remove('scrub');
+        if (!mode) return;
+        document.documentElement.classList.remove(mode);
+        mode = ''; tone = 'ink';
         removeEventListener('scroll', onScroll);
-        if (raf !== null) { cancelAnimationFrame(raf); raf = null; }
-        bands.forEach(b => { b.el.style.cssText = ''; });
+        if (raf !== null) { cancelAnimationFrame(raf); raf = null; last = 0; }
+        vars = new WeakMap();
+        for (const el of [stage, view, ...halves, ...bands.map(b => b.el)]) el.removeAttribute('style');
       }
     };
   })();
-  // Reduced motion starts the film off, but the visitor can opt in (remembered on this device).
-  // The other four gates (phones, portrait tablets, coarse portrait, landscape phones) always win.
+  // Reduced motion starts the hero still, but the visitor can opt in (remembered on this device).
   let filmOptIn = store.get('bh-film', false);
   const optWrap = $('.film-opt'), optBtn = $('.film-opt-btn');
   function applyHeroMode() {
     if (!Film) return;
-    const off = hero.closest('.view')?.hidden;      // one-page version: the film only runs on the home view
+    const off = hero.closest('.view')?.hidden;      // one-page version: the hero only runs on the home view
     const small = MQLS.slice(0, 4).some(m => m.matches);
     const calm = reduced.matches;
     if (optWrap) {
-      optWrap.hidden = small || !calm;              // the choice only exists where reduced motion is the sole blocker
+      optWrap.hidden = !calm;                       // the choice only exists where the device asks for less motion
       optBtn.setAttribute('aria-pressed', String(filmOptIn));
       $('span', optBtn).textContent = filmOptIn ? optBtn.dataset.on : optBtn.dataset.off;
     }
-    if (off || small || (calm && !filmOptIn)) { Film.disable(); ambient(); } else Film.enable();
+    if (off || (calm && !filmOptIn)) Film.disable();
+    else Film.enable(small ? 'reveal' : 'scrub');   // phones and portrait tablets never load the film
+    ambient();
+    navState();
   }
   optBtn?.addEventListener('click', () => {
     filmOptIn = !filmOptIn;
     store.set('bh-film', filmOptIn);
     applyHeroMode();
-    navState();
   });
   MQLS.forEach(m => m.addEventListener('change', applyHeroMode));
+  film = Film;
 
   /* ---------- ambient loops: fade in only once really playing, pause off-screen ---------- */
   const loopIO = new IntersectionObserver(entries => {
@@ -426,23 +489,17 @@
       lbImg.src = src.currentSrc || src.src;
       lbImg.alt = src.alt;
       lbImg.dataset.img = src.dataset.img;      // integrity: the lightbox carries the photo's key and space
-      // never enlarge a ~620px photo more than 1.35x
-      lbImg.style.maxWidth = src.naturalWidth ? `min(92vw, ${Math.round(src.naturalWidth * 1.35)}px)` : '';
+      // never enlarge a ~620px photo more than 1.3x
+      lbImg.style.maxWidth = src.naturalWidth ? `min(92vw, ${Math.round(src.naturalWidth * 1.3)}px)` : '';
       lb.dataset.space = gal.dataset.space;
       cap.textContent = src.alt;
       count.textContent = `${at + 1} ${U.lightboxOf} ${shots.length}`;
     }
     $$('[data-gallery]').forEach(g => {
-      const tabs = $$('.tab', g.closest('section'));
-      tabs.forEach(t => t.addEventListener('click', () => {
-        tabs.forEach(x => x.setAttribute('aria-pressed', String(x === t)));
-        const area = t.dataset.area;
-        $$('.shot', g).forEach(s => { s.hidden = area !== 'all' && s.dataset.area !== area; });
-      }));
       g.addEventListener('click', e => {
         const b = e.target.closest('.shot-btn'); if (!b) return;
         gal = g;
-        shots = $$('.shot:not([hidden]) .shot-btn', g);
+        shots = $$('.shot-btn', g);                    // every photo of the space, folded chapters included
         opener = b;
         show(shots.indexOf(b));
         lb.showModal();
@@ -457,6 +514,52 @@
       if (e.key === 'ArrowRight') show(at + 1);
     });
     lb.addEventListener('close', () => opener?.focus());
+  }
+
+  /* ---------- room chapters: long ones fold after eight photos ---------- */
+  $$('.chapter-more').forEach(b => b.addEventListener('click', () => {
+    const open = b.getAttribute('aria-expanded') !== 'true';
+    const ch = b.closest('.chapter');
+    $$('[data-extra]', ch).forEach(li => { li.hidden = !open; });
+    b.setAttribute('aria-expanded', String(open));
+    b.textContent = open ? b.dataset.less : b.dataset.more;
+    if (!open && ch.getBoundingClientRect().top < 0) ch.scrollIntoView({ behavior: reduced.matches ? 'auto' : 'smooth' });
+  }));
+
+  /* ---------- five doors: hover flips through three rooms; phones swipe with snap and dots ---------- */
+  $$('[data-door]').forEach(door => {
+    const imgs = $$('.door-img', door), labels = $$('.door-rooms li', door), ticks = $$('.door-ticks i', door);
+    const link = $('.door-link', door);
+    let at = 0, timer = null;
+    const show = i => {
+      at = i;
+      [imgs, labels, ticks].forEach(set => set.forEach((el, n) => el.classList.toggle('on', n === i)));
+    };
+    show(0);
+    const start = () => {
+      if (timer !== null || reduced.matches || imgs.length < 2) return;
+      timer = setTimeout(function next() { show((at + 1) % imgs.length); timer = setTimeout(next, 1400); }, 420);
+    };
+    const stop = () => { clearTimeout(timer); timer = null; show(0); };
+    link.addEventListener('pointerenter', e => { if (e.pointerType === 'mouse') start(); });
+    link.addEventListener('pointerleave', stop);
+    link.addEventListener('focus', () => { if (link.matches(':focus-visible')) start(); });
+    link.addEventListener('blur', stop);
+  });
+  if (doorRow) {
+    const dots = $$('.dot');
+    const io = new IntersectionObserver(entries => {
+      for (const en of entries) {
+        if (!en.isIntersecting) continue;
+        const i = doorEls.indexOf(en.target);
+        dots.forEach((d, n) => (n === i ? d.setAttribute('aria-current', 'true') : d.removeAttribute('aria-current')));
+      }
+    }, { root: doorRow, threshold: 0.6 });
+    doorEls.forEach(d => io.observe(d));
+    dots.forEach((d, i) => d.addEventListener('click', () => {
+      const el = doorEls[i];
+      doorRow.scrollTo({ left: el.offsetLeft - doorRow.offsetLeft - (doorRow.clientWidth - el.offsetWidth) / 2, behavior: reduced.matches ? 'auto' : 'smooth' });
+    }));
   }
 
   /* ---------- space pages: sub-nav highlight, mobile book bar ---------- */
@@ -481,24 +584,29 @@
   /* ---------- one-page version (the published artifact): views switch by #hash ---------- */
   const routes = $$('.view');
   const app = $('.app');
-  function showRoute(hash) {
+  function showRoute(hash, first) {
     if (!routes.length) return;
     const raw = decodeURIComponent((hash || '').replace(/^#/, ''));
     const name = raw.split('--')[0];
     const route = routes.find(r => r.dataset.route === name) || (raw ? null : routes[0]);
     if (!route) return;                              // e.g. #main: leave it to the browser
     const changed = route.hidden;
-    if (changed) {
-      routes.forEach(r => { r.hidden = r !== route; });
-      app.dataset.page = route.dataset.route;
-      document.title = route.dataset.title;
-      $$('#drawer a').forEach(a => a.toggleAttribute('aria-current', a.hash === '#' + route.dataset.route));
-      applyHeroMode(); ambient(); markPre(route); drawLines();
-    }
-    const target = raw.includes('--') && document.getElementById(raw);
-    if (target) target.scrollIntoView({ behavior: changed || reduced.matches ? 'instant' : 'smooth' });
-    else if (changed) scrollTo({ top: 0, behavior: 'instant' });
-    navState();
+    const swap = () => {
+      if (changed) {
+        routes.forEach(r => { r.hidden = r !== route; });
+        app.dataset.page = route.dataset.route;
+        document.title = route.dataset.title;
+        $$('#drawer a').forEach(a => a.toggleAttribute('aria-current', a.hash === '#' + route.dataset.route));
+        applyHeroMode(); markPre(route); drawLines();
+      }
+      const target = raw.includes('--') && document.getElementById(raw);
+      if (target) target.scrollIntoView({ behavior: changed || reduced.matches ? 'instant' : 'smooth' });
+      else if (changed) scrollTo({ top: 0, behavior: 'instant' });
+      navState();
+    };
+    // Changing view: an arch wipe (CSS ::view-transition) instead of a hard cut. Reduced motion gets the plain cut.
+    if (changed && !first && document.startViewTransition && !reduced.matches) document.startViewTransition(swap);
+    else swap();
   }
   addEventListener('hashchange', () => showRoute(location.hash));
   /* ---------- Family view: every missing detail, straight from SETTINGS ---------- */
@@ -605,7 +713,7 @@
 
   /* ---------- start ---------- */
   if (reduced.matches) pinFinal();
-  if (routes.length && location.hash) showRoute(location.hash);
+  if (routes.length && location.hash) showRoute(location.hash, true);
   if (Film) applyHeroMode(); else ambient();
   window.BH = { toast, film: Film };   // film exposed for testing: BH.film.enable() / disable()
 })();

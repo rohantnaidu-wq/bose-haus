@@ -26,11 +26,11 @@ Static site built from one editable file. Design phase; not deployed yet.
 | `docs/design-package.md` | Design decisions (10k-websites skill) |
 | `generated/raw/` | Higgsfield originals, including the 35 MB walk-in film. Never deployed |
 
-## The walk-in film
-Desktop visitors (no reduced-motion setting) get a scroll-driven walk up the driveway.
-Phones, portrait tablets and reduced-motion visitors get a still hero; phones also get the portrait walkway loop.
+## The hero: "The gate opens"
+Desktop: a limewash wall with one arched doorway; scrolling opens it and walks up the driveway (the film, `-g 8`).
+Phones and portrait tablets: the same doorway opening over the portrait photo and walkway loop; the film never loads.
+Reduced motion: a still composition with a "Play the walk-in as you scroll" button, remembered per device.
 
 ## Before going live
-- Re-encode the film with ffmpeg (`-g 8`, about 4–6 MB) and replace `generated/raw/film-walk-in.mp4`.
 - Fill `siteUrl` so canonical links, og tags and the sitemap use the real address.
 - Fill the Family view checklist (footer button on any page).
