@@ -1,0 +1,9 @@
+# Originals stay on the owner's PC (the build uses web/ instead)
+/photos/
+/generated/raw/
+/generated/review/
+# Build outputs (rebuilt by tools/build.py)
+/dist/
+/artifact/
+__pycache__/
+*.pyc

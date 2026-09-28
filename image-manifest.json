@@ -1,0 +1,2455 @@
+{
+  "photos": {
+    "compound-driveway-garden-walkway-01": {
+      "space": "compound",
+      "area": "driveway-garden-walkway",
+      "file": "photos/compound/driveway-garden-walkway/compound-driveway-garden-walkway-01.png",
+      "original": "Driveway - Garden - Walkway/Driveway .png",
+      "width": 465,
+      "height": 626,
+      "sha1": "66614751452df9951b7c05cbf503d73156dd3a3d",
+      "web": "photos/compound-driveway-garden-walkway-01.webp"
+    },
+    "compound-driveway-garden-walkway-02": {
+      "space": "compound",
+      "area": "driveway-garden-walkway",
+      "file": "photos/compound/driveway-garden-walkway/compound-driveway-garden-walkway-02.png",
+      "original": "Driveway - Garden - Walkway/Driveway-Outside-Gate.png",
+      "width": 827,
+      "height": 622,
+      "sha1": "e5610519ee5f8df999889c14ac89b7bf263071c2",
+      "web": "photos/compound-driveway-garden-walkway-02.webp"
+    },
+    "compound-driveway-garden-walkway-03": {
+      "space": "compound",
+      "area": "driveway-garden-walkway",
+      "file": "photos/compound/driveway-garden-walkway/compound-driveway-garden-walkway-03.png",
+      "original": "Driveway - Garden - Walkway/Driveway-walkway-garden-bench-view-2.png",
+      "width": 465,
+      "height": 622,
+      "sha1": "55081977c576f7ee45bf7e0823329cf3e3f4a98b",
+      "web": "photos/compound-driveway-garden-walkway-03.webp"
+    },
+    "compound-driveway-garden-walkway-04": {
+      "space": "compound",
+      "area": "driveway-garden-walkway",
+      "file": "photos/compound/driveway-garden-walkway/compound-driveway-garden-walkway-04.png",
+      "original": "Driveway - Garden - Walkway/Driveway-walkway-garden-bench.png",
+      "width": 832,
+      "height": 622,
+      "sha1": "deb0f50dc781dbbd520f6d1eec56f35aa8bd470f",
+      "web": "photos/compound-driveway-garden-walkway-04.webp"
+    },
+    "compound-driveway-garden-walkway-05": {
+      "space": "compound",
+      "area": "driveway-garden-walkway",
+      "file": "photos/compound/driveway-garden-walkway/compound-driveway-garden-walkway-05.png",
+      "original": "Driveway - Garden - Walkway/Driveway-walkway-view-2.png",
+      "width": 465,
+      "height": 622,
+      "sha1": "16685a0776e42208275270f06fe9fcbae5cd70c3",
+      "web": "photos/compound-driveway-garden-walkway-05.webp"
+    },
+    "compound-driveway-garden-walkway-06": {
+      "space": "compound",
+      "area": "driveway-garden-walkway",
+      "file": "photos/compound/driveway-garden-walkway/compound-driveway-garden-walkway-06.png",
+      "original": "Driveway - Garden - Walkway/Driveway-Walkway.png",
+      "width": 467,
+      "height": 622,
+      "sha1": "72d6f30191a262e004c3fa014396f3d3eeec0136",
+      "web": "photos/compound-driveway-garden-walkway-06.webp"
+    },
+    "compound-driveway-garden-walkway-07": {
+      "space": "compound",
+      "area": "driveway-garden-walkway",
+      "file": "photos/compound/driveway-garden-walkway/compound-driveway-garden-walkway-07.png",
+      "original": "Driveway - Garden - Walkway/Gate.png",
+      "width": 466,
+      "height": 622,
+      "sha1": "049c87f2b0ec287e5d3664b9c6020c8ba28d2e9a",
+      "web": "photos/compound-driveway-garden-walkway-07.webp"
+    },
+    "compound-driveway-garden-walkway-08": {
+      "space": "compound",
+      "area": "driveway-garden-walkway",
+      "file": "photos/compound/driveway-garden-walkway/compound-driveway-garden-walkway-08.png",
+      "original": "Driveway - Garden - Walkway/walkway-trees-view-2.png",
+      "width": 467,
+      "height": 622,
+      "sha1": "e2446490d5c85faea8069d91020b889bfdfe7ed5",
+      "web": "photos/compound-driveway-garden-walkway-08.webp"
+    },
+    "compound-driveway-garden-walkway-09": {
+      "space": "compound",
+      "area": "driveway-garden-walkway",
+      "file": "photos/compound/driveway-garden-walkway/compound-driveway-garden-walkway-09.png",
+      "original": "Driveway - Garden - Walkway/walkway-trees-view-3.png",
+      "width": 465,
+      "height": 621,
+      "sha1": "9999b53bb736ca56ee433dba0d1552c19f85cc18",
+      "web": "photos/compound-driveway-garden-walkway-09.webp"
+    },
+    "compound-driveway-garden-walkway-10": {
+      "space": "compound",
+      "area": "driveway-garden-walkway",
+      "file": "photos/compound/driveway-garden-walkway/compound-driveway-garden-walkway-10.png",
+      "original": "Driveway - Garden - Walkway/walkway-trees-view-4.png",
+      "width": 465,
+      "height": 622,
+      "sha1": "cb92f784921c1ef33fbe1fb6cedbad3232ce34a3",
+      "web": "photos/compound-driveway-garden-walkway-10.webp"
+    },
+    "compound-driveway-garden-walkway-11": {
+      "space": "compound",
+      "area": "driveway-garden-walkway",
+      "file": "photos/compound/driveway-garden-walkway/compound-driveway-garden-walkway-11.png",
+      "original": "Driveway - Garden - Walkway/Walkway-trees-view-5.png",
+      "width": 467,
+      "height": 622,
+      "sha1": "230cb0542f5664c80a13721cd763d0e56f467afb",
+      "web": "photos/compound-driveway-garden-walkway-11.webp"
+    },
+    "compound-driveway-garden-walkway-12": {
+      "space": "compound",
+      "area": "driveway-garden-walkway",
+      "file": "photos/compound/driveway-garden-walkway/compound-driveway-garden-walkway-12.png",
+      "original": "Driveway - Garden - Walkway/Walkway-trees-view-6.png",
+      "width": 465,
+      "height": 627,
+      "sha1": "26efaf2f43895da090c388fab477988af1e02ed6",
+      "web": "photos/compound-driveway-garden-walkway-12.webp"
+    },
+    "compound-driveway-garden-walkway-13": {
+      "space": "compound",
+      "area": "driveway-garden-walkway",
+      "file": "photos/compound/driveway-garden-walkway/compound-driveway-garden-walkway-13.png",
+      "original": "Driveway - Garden - Walkway/Walkway-trees-view-7.png",
+      "width": 831,
+      "height": 625,
+      "sha1": "b509cad7f4fb94d49d27b52f2ca78dc8a0947f2d",
+      "web": "photos/compound-driveway-garden-walkway-13.webp"
+    },
+    "compound-driveway-garden-walkway-14": {
+      "space": "compound",
+      "area": "driveway-garden-walkway",
+      "file": "photos/compound/driveway-garden-walkway/compound-driveway-garden-walkway-14.png",
+      "original": "Driveway - Garden - Walkway/Walkway-trees.png",
+      "width": 466,
+      "height": 625,
+      "sha1": "f1bdb888e85ab9a04b25c03979ee6baff7375ee5",
+      "web": "photos/compound-driveway-garden-walkway-14.webp"
+    },
+    "cottage-bedroom-01": {
+      "space": "cottage",
+      "area": "bedroom",
+      "file": "photos/cottage/bedroom/cottage-bedroom-01.png",
+      "original": "The Cottage/cottage-bedroom/cottage-Bedroom-view-1.png",
+      "width": 462,
+      "height": 622,
+      "sha1": "5c9808b4f22b66dfcc16fb6d96befd6056fe0d5e",
+      "web": "photos/cottage-bedroom-01.webp"
+    },
+    "cottage-bedroom-02": {
+      "space": "cottage",
+      "area": "bedroom",
+      "file": "photos/cottage/bedroom/cottage-bedroom-02.png",
+      "original": "The Cottage/cottage-bedroom/cottage-Bedroom-view-2.png",
+      "width": 460,
+      "height": 620,
+      "sha1": "3e27a2d25b6802a5262f5efab72e6751b3403c4c",
+      "web": "photos/cottage-bedroom-02.webp"
+    },
+    "cottage-bedroom-03": {
+      "space": "cottage",
+      "area": "bedroom",
+      "file": "photos/cottage/bedroom/cottage-bedroom-03.png",
+      "original": "The Cottage/cottage-bedroom/cottage-Bedroom-view-3.png",
+      "width": 467,
+      "height": 626,
+      "sha1": "443284c48385f46c41a17f8f23615d8482010cbf",
+      "web": "photos/cottage-bedroom-03.webp"
+    },
+    "cottage-bedroom-04": {
+      "space": "cottage",
+      "area": "bedroom",
+      "file": "photos/cottage/bedroom/cottage-bedroom-04.png",
+      "original": "The Cottage/cottage-bedroom/cottage-Bedroom-view-4.png",
+      "width": 827,
+      "height": 622,
+      "sha1": "24d7193dfbc9af17060dfd88e5db5181da9ccc87",
+      "web": "photos/cottage-bedroom-04.webp"
+    },
+    "cottage-bedroom-05": {
+      "space": "cottage",
+      "area": "bedroom",
+      "file": "photos/cottage/bedroom/cottage-bedroom-05.png",
+      "original": "The Cottage/cottage-bedroom/cottage-Bedroom-view-5.png",
+      "width": 462,
+      "height": 625,
+      "sha1": "4f270dcee063d0a8523b9adc12799c0f548ef530",
+      "web": "photos/cottage-bedroom-05.webp"
+    },
+    "cottage-bedroom-06": {
+      "space": "cottage",
+      "area": "bedroom",
+      "file": "photos/cottage/bedroom/cottage-bedroom-06.png",
+      "original": "The Cottage/cottage-bedroom/cottage-Bedroom-view-6.png",
+      "width": 830,
+      "height": 622,
+      "sha1": "f59e3700b9395f977783c41de0d7e040091522e0",
+      "web": "photos/cottage-bedroom-06.webp"
+    },
+    "cottage-bedroom-07": {
+      "space": "cottage",
+      "area": "bedroom",
+      "file": "photos/cottage/bedroom/cottage-bedroom-07.png",
+      "original": "The Cottage/cottage-bedroom/cottage-Bedroom-view-7.png",
+      "width": 466,
+      "height": 627,
+      "sha1": "07bf5a7df8551802131221709fd3fb77a4bf6a25",
+      "web": "photos/cottage-bedroom-07.webp"
+    },
+    "cottage-bedroom-08": {
+      "space": "cottage",
+      "area": "bedroom",
+      "file": "photos/cottage/bedroom/cottage-bedroom-08.png",
+      "original": "The Cottage/cottage-bedroom/cottage-Bedroom-view-8.png",
+      "width": 831,
+      "height": 625,
+      "sha1": "9e0176f37ae8df24abb18f92d3fb2abed8bacfb7",
+      "web": "photos/cottage-bedroom-08.webp"
+    },
+    "cottage-bedroom-09": {
+      "space": "cottage",
+      "area": "bedroom",
+      "file": "photos/cottage/bedroom/cottage-bedroom-09.png",
+      "original": "The Cottage/cottage-bedroom/cottage-Bedroom-view-9.png",
+      "width": 832,
+      "height": 622,
+      "sha1": "18002debaa265002c78cc023dcbdcd90875c594a",
+      "web": "photos/cottage-bedroom-09.webp"
+    },
+    "cottage-bedroom-10": {
+      "space": "cottage",
+      "area": "bedroom",
+      "file": "photos/cottage/bedroom/cottage-bedroom-10.png",
+      "original": "The Cottage/cottage-bedroom/cottage-Bedroom-view-10.png",
+      "width": 467,
+      "height": 621,
+      "sha1": "e70204b5c10dcecee762ff678da5137a415eb234",
+      "web": "photos/cottage-bedroom-10.webp"
+    },
+    "cottage-dressing-room-bathroom-01": {
+      "space": "cottage",
+      "area": "dressing-room-bathroom",
+      "file": "photos/cottage/dressing-room-bathroom/cottage-dressing-room-bathroom-01.png",
+      "original": "The Cottage/cottage-dressing room - bathroom/cottage-dressingroom-bathroom-view-1.png",
+      "width": 440,
+      "height": 626,
+      "sha1": "20271be96ca88b220ab0552d0745950752bd81bb",
+      "web": "photos/cottage-dressing-room-bathroom-01.webp"
+    },
+    "cottage-dressing-room-bathroom-02": {
+      "space": "cottage",
+      "area": "dressing-room-bathroom",
+      "file": "photos/cottage/dressing-room-bathroom/cottage-dressing-room-bathroom-02.png",
+      "original": "The Cottage/cottage-dressing room - bathroom/cottage-dressingroom-bathroom-view-2.png",
+      "width": 470,
+      "height": 627,
+      "sha1": "5bb28b6282e96bc194d70e550a7cd3cbb4dbc149",
+      "web": "photos/cottage-dressing-room-bathroom-02.webp"
+    },
+    "cottage-dressing-room-bathroom-03": {
+      "space": "cottage",
+      "area": "dressing-room-bathroom",
+      "file": "photos/cottage/dressing-room-bathroom/cottage-dressing-room-bathroom-03.png",
+      "original": "The Cottage/cottage-dressing room - bathroom/cottage-dressingroom-bathroom-view-3.png",
+      "width": 467,
+      "height": 625,
+      "sha1": "aa62f23d606ff4680f755ef5abed478c2ef42ae6",
+      "web": "photos/cottage-dressing-room-bathroom-03.webp"
+    },
+    "cottage-garden-01": {
+      "space": "cottage",
+      "area": "garden",
+      "file": "photos/cottage/garden/cottage-garden-01.png",
+      "original": "The Cottage/cottage-garden/Cottage-garden-view-1.png",
+      "width": 832,
+      "height": 625,
+      "sha1": "5debea0ad2a75777c0f436b0bc864fca5d4c83da",
+      "web": "photos/cottage-garden-01.webp"
+    },
+    "cottage-garden-02": {
+      "space": "cottage",
+      "area": "garden",
+      "file": "photos/cottage/garden/cottage-garden-02.png",
+      "original": "The Cottage/cottage-garden/Cottage-garden-view-2.png",
+      "width": 835,
+      "height": 626,
+      "sha1": "43a053670b3608d84ec0209e807fc3843746c9a4",
+      "web": "photos/cottage-garden-02.webp"
+    },
+    "cottage-garden-03": {
+      "space": "cottage",
+      "area": "garden",
+      "file": "photos/cottage/garden/cottage-garden-03.png",
+      "original": "The Cottage/cottage-garden/Cottage-garden-view-3.png",
+      "width": 467,
+      "height": 627,
+      "sha1": "8753513fd724b5ef165fe00aa8514db292e5a67e",
+      "web": "photos/cottage-garden-03.webp"
+    },
+    "cottage-garden-04": {
+      "space": "cottage",
+      "area": "garden",
+      "file": "photos/cottage/garden/cottage-garden-04.png",
+      "original": "The Cottage/cottage-garden/Cottage-garden-view-4.png",
+      "width": 832,
+      "height": 625,
+      "sha1": "3371b3b9e474e1dbd6b9c3e711fa383a3a406ffb",
+      "web": "photos/cottage-garden-04.webp"
+    },
+    "cottage-garden-05": {
+      "space": "cottage",
+      "area": "garden",
+      "file": "photos/cottage/garden/cottage-garden-05.png",
+      "original": "The Cottage/cottage-garden/Cottage-garden-view-5.png",
+      "width": 465,
+      "height": 621,
+      "sha1": "39f2d1b99f2ff0c08d65165326c724e3da9ce7ce",
+      "web": "photos/cottage-garden-05.webp"
+    },
+    "cottage-garden-06": {
+      "space": "cottage",
+      "area": "garden",
+      "file": "photos/cottage/garden/cottage-garden-06.png",
+      "original": "The Cottage/cottage-garden/Cottage-garden-view-6.png",
+      "width": 830,
+      "height": 622,
+      "sha1": "42648998d71f0e96a65f9d10dd3f5618ae73cacf",
+      "web": "photos/cottage-garden-06.webp"
+    },
+    "cottage-garden-07": {
+      "space": "cottage",
+      "area": "garden",
+      "file": "photos/cottage/garden/cottage-garden-07.png",
+      "original": "The Cottage/cottage-garden/Cottage-garden-view-7.png",
+      "width": 832,
+      "height": 625,
+      "sha1": "433b5ebb31466e7cfbf8327ab214e45c0d209ccf",
+      "web": "photos/cottage-garden-07.webp"
+    },
+    "cottage-garden-08": {
+      "space": "cottage",
+      "area": "garden",
+      "file": "photos/cottage/garden/cottage-garden-08.png",
+      "original": "The Cottage/cottage-garden/Cottage-garden-view-8.png",
+      "width": 466,
+      "height": 625,
+      "sha1": "3a7cc73fc5bcddd2c6294c670a21b1d5f5f284db",
+      "web": "photos/cottage-garden-08.webp"
+    },
+    "cottage-kitchen-01": {
+      "space": "cottage",
+      "area": "kitchen",
+      "file": "photos/cottage/kitchen/cottage-kitchen-01.png",
+      "original": "The Cottage/cottage-kitchen/cottage-kitchen-view-1.png",
+      "width": 477,
+      "height": 622,
+      "sha1": "b9a363ff1e4766e62be49c35bf3d37f3ecd91c24",
+      "web": "photos/cottage-kitchen-01.webp"
+    },
+    "cottage-kitchen-02": {
+      "space": "cottage",
+      "area": "kitchen",
+      "file": "photos/cottage/kitchen/cottage-kitchen-02.png",
+      "original": "The Cottage/cottage-kitchen/cottage-kitchen-view-2.png",
+      "width": 467,
+      "height": 626,
+      "sha1": "a9d72204887b2a766b1f2d5d050ad4ce493bd511",
+      "web": "photos/cottage-kitchen-02.webp"
+    },
+    "cottage-kitchen-03": {
+      "space": "cottage",
+      "area": "kitchen",
+      "file": "photos/cottage/kitchen/cottage-kitchen-03.png",
+      "original": "The Cottage/cottage-kitchen/cottage-kitchen-view-3.png",
+      "width": 850,
+      "height": 620,
+      "sha1": "c6e6efac47ee50778d8735e8c74420d5d495f26d",
+      "web": "photos/cottage-kitchen-03.webp"
+    },
+    "cottage-kitchen-04": {
+      "space": "cottage",
+      "area": "kitchen",
+      "file": "photos/cottage/kitchen/cottage-kitchen-04.png",
+      "original": "The Cottage/cottage-kitchen/cottage-kitchen-view-4.png",
+      "width": 832,
+      "height": 625,
+      "sha1": "3509f42ec8923ebb7dd9c1e612e466449da5cdfb",
+      "web": "photos/cottage-kitchen-04.webp"
+    },
+    "cottage-kitchen-05": {
+      "space": "cottage",
+      "area": "kitchen",
+      "file": "photos/cottage/kitchen/cottage-kitchen-05.png",
+      "original": "The Cottage/cottage-kitchen/cottage-kitchen-view-5.png",
+      "width": 466,
+      "height": 625,
+      "sha1": "4692a3de44b3d1e3d28a4ba5b7f6a8e40b3aa4b7",
+      "web": "photos/cottage-kitchen-05.webp"
+    },
+    "cottage-kitchen-06": {
+      "space": "cottage",
+      "area": "kitchen",
+      "file": "photos/cottage/kitchen/cottage-kitchen-06.png",
+      "original": "The Cottage/cottage-kitchen/cottage-kitchen-view-6.png",
+      "width": 832,
+      "height": 626,
+      "sha1": "0846f2c1ba35cfb7a3ba2d90fc0f4f7108bc48fc",
+      "web": "photos/cottage-kitchen-06.webp"
+    },
+    "cottage-kitchen-07": {
+      "space": "cottage",
+      "area": "kitchen",
+      "file": "photos/cottage/kitchen/cottage-kitchen-07.png",
+      "original": "The Cottage/cottage-kitchen/cottage-kitchen-view-7.png",
+      "width": 470,
+      "height": 627,
+      "sha1": "6a56fa32d4ab8d6a2efe1b0cfc49e806c970fa0a",
+      "web": "photos/cottage-kitchen-07.webp"
+    },
+    "cottage-kitchen-08": {
+      "space": "cottage",
+      "area": "kitchen",
+      "file": "photos/cottage/kitchen/cottage-kitchen-08.png",
+      "original": "The Cottage/cottage-kitchen/cottage-kitchen-view-8.png",
+      "width": 831,
+      "height": 622,
+      "sha1": "7d3dc01abb9fe04939f61c0035adc47693197f10",
+      "web": "photos/cottage-kitchen-08.webp"
+    },
+    "courtyard-bathroom-01": {
+      "space": "courtyard",
+      "area": "bathroom",
+      "file": "photos/courtyard/bathroom/courtyard-bathroom-01.png",
+      "original": "The Courtyard/courtyard-bathroom/courtyard-bathroom-view-1.png",
+      "width": 467,
+      "height": 627,
+      "sha1": "17eba05b60a2d6d3a38fcff0a11679f9340d3763",
+      "web": "photos/courtyard-bathroom-01.webp"
+    },
+    "courtyard-bathroom-02": {
+      "space": "courtyard",
+      "area": "bathroom",
+      "file": "photos/courtyard/bathroom/courtyard-bathroom-02.png",
+      "original": "The Courtyard/courtyard-bathroom/courtyard-bathroom-view-2.png",
+      "width": 470,
+      "height": 626,
+      "sha1": "bfcf4a0bde07b71f8bd9894effd2e70c88992dca",
+      "web": "photos/courtyard-bathroom-02.webp"
+    },
+    "courtyard-bathroom-03": {
+      "space": "courtyard",
+      "area": "bathroom",
+      "file": "photos/courtyard/bathroom/courtyard-bathroom-03.png",
+      "original": "The Courtyard/courtyard-bathroom/courtyard-bathroom-view-3.png",
+      "width": 467,
+      "height": 627,
+      "sha1": "57e7c1508865bc38791a7e6d75994ad2b7a171e5",
+      "web": "photos/courtyard-bathroom-03.webp"
+    },
+    "courtyard-bathroom-04": {
+      "space": "courtyard",
+      "area": "bathroom",
+      "file": "photos/courtyard/bathroom/courtyard-bathroom-04.png",
+      "original": "The Courtyard/courtyard-bathroom/courtyard-bathroom-view-4.png",
+      "width": 467,
+      "height": 626,
+      "sha1": "d2cce970499dd3411167d9b839d531d8d2f74caa",
+      "web": "photos/courtyard-bathroom-04.webp"
+    },
+    "courtyard-bathroom-05": {
+      "space": "courtyard",
+      "area": "bathroom",
+      "file": "photos/courtyard/bathroom/courtyard-bathroom-05.png",
+      "original": "The Courtyard/courtyard-bathroom/courtyard-bathroom-view-5.png",
+      "width": 467,
+      "height": 625,
+      "sha1": "6dc9f7b395f70cb4b830371f3970ee789811a190",
+      "web": "photos/courtyard-bathroom-05.webp"
+    },
+    "courtyard-bathroom-06": {
+      "space": "courtyard",
+      "area": "bathroom",
+      "file": "photos/courtyard/bathroom/courtyard-bathroom-06.png",
+      "original": "The Courtyard/courtyard-bathroom/courtyard-bathroom-view-6.png",
+      "width": 467,
+      "height": 627,
+      "sha1": "39ebc004c5ea80e6768328fcf42ca0278e0e7ef4",
+      "web": "photos/courtyard-bathroom-06.webp"
+    },
+    "courtyard-bathroom-07": {
+      "space": "courtyard",
+      "area": "bathroom",
+      "file": "photos/courtyard/bathroom/courtyard-bathroom-07.png",
+      "original": "The Courtyard/courtyard-bathroom/courtyard-bathroom-view-7.png",
+      "width": 465,
+      "height": 626,
+      "sha1": "bb9b0cfe023cd2acb45aad8d791e8776a325c618",
+      "web": "photos/courtyard-bathroom-07.webp"
+    },
+    "courtyard-bathroom-08": {
+      "space": "courtyard",
+      "area": "bathroom",
+      "file": "photos/courtyard/bathroom/courtyard-bathroom-08.png",
+      "original": "The Courtyard/courtyard-bathroom/courtyard-bathroom-view-8.png",
+      "width": 467,
+      "height": 622,
+      "sha1": "302b312129607b11502da6707d1374cf086fd522",
+      "web": "photos/courtyard-bathroom-08.webp"
+    },
+    "courtyard-bathroom-09": {
+      "space": "courtyard",
+      "area": "bathroom",
+      "file": "photos/courtyard/bathroom/courtyard-bathroom-09.png",
+      "original": "The Courtyard/courtyard-bathroom/courtyard-bathroom-view-9.png",
+      "width": 832,
+      "height": 627,
+      "sha1": "95dc22635b1b767f32be822e49045784ea43698b",
+      "web": "photos/courtyard-bathroom-09.webp"
+    },
+    "courtyard-bathroom-10": {
+      "space": "courtyard",
+      "area": "bathroom",
+      "file": "photos/courtyard/bathroom/courtyard-bathroom-10.png",
+      "original": "The Courtyard/courtyard-bathroom/courtyard-bathroom-view-10.png",
+      "width": 470,
+      "height": 626,
+      "sha1": "e1245b0c6f6ee31b67b940fdb1b218568a5724c2",
+      "web": "photos/courtyard-bathroom-10.webp"
+    },
+    "courtyard-bathroom-11": {
+      "space": "courtyard",
+      "area": "bathroom",
+      "file": "photos/courtyard/bathroom/courtyard-bathroom-11.png",
+      "original": "The Courtyard/courtyard-bathroom/courtyard-bathroom-view-11.png",
+      "width": 465,
+      "height": 625,
+      "sha1": "6c21ec271aa850b91421787fb3423802d1321ba0",
+      "web": "photos/courtyard-bathroom-11.webp"
+    },
+    "courtyard-bedroom-01": {
+      "space": "courtyard",
+      "area": "bedroom",
+      "file": "photos/courtyard/bedroom/courtyard-bedroom-01.png",
+      "original": "The Courtyard/courtyard-bedroom/courtyard-bedroom-view-1.png",
+      "width": 470,
+      "height": 625,
+      "sha1": "608ea50347fcfa0c232b5072335eaacc2e6e9329",
+      "web": "photos/courtyard-bedroom-01.webp"
+    },
+    "courtyard-bedroom-02": {
+      "space": "courtyard",
+      "area": "bedroom",
+      "file": "photos/courtyard/bedroom/courtyard-bedroom-02.png",
+      "original": "The Courtyard/courtyard-bedroom/courtyard-bedroom-view-2.png",
+      "width": 467,
+      "height": 622,
+      "sha1": "c40b90a27b72a3eb85948af51e449dd802d88c5b",
+      "web": "photos/courtyard-bedroom-02.webp"
+    },
+    "courtyard-bedroom-03": {
+      "space": "courtyard",
+      "area": "bedroom",
+      "file": "photos/courtyard/bedroom/courtyard-bedroom-03.png",
+      "original": "The Courtyard/courtyard-bedroom/courtyard-bedroom-view-3.png",
+      "width": 832,
+      "height": 627,
+      "sha1": "3c806abb5935fb16e212241d18d4c168fdfa538c",
+      "web": "photos/courtyard-bedroom-03.webp"
+    },
+    "courtyard-bedroom-04": {
+      "space": "courtyard",
+      "area": "bedroom",
+      "file": "photos/courtyard/bedroom/courtyard-bedroom-04.png",
+      "original": "The Courtyard/courtyard-bedroom/courtyard-bedroom-view-4.png",
+      "width": 467,
+      "height": 625,
+      "sha1": "623d61e3be906bda2045c2049f016de0334c4319",
+      "web": "photos/courtyard-bedroom-04.webp"
+    },
+    "courtyard-bedroom-05": {
+      "space": "courtyard",
+      "area": "bedroom",
+      "file": "photos/courtyard/bedroom/courtyard-bedroom-05.png",
+      "original": "The Courtyard/courtyard-bedroom/courtyard-bedroom-view-5.png",
+      "width": 470,
+      "height": 622,
+      "sha1": "112240b0aae3e5e084ed99f683770fb304667bc4",
+      "web": "photos/courtyard-bedroom-05.webp"
+    },
+    "courtyard-bedroom-06": {
+      "space": "courtyard",
+      "area": "bedroom",
+      "file": "photos/courtyard/bedroom/courtyard-bedroom-06.png",
+      "original": "The Courtyard/courtyard-bedroom/courtyard-bedroom-view-6.png",
+      "width": 832,
+      "height": 622,
+      "sha1": "003354dbbb2f59e6427cef1d2417c47b1b282991",
+      "web": "photos/courtyard-bedroom-06.webp"
+    },
+    "courtyard-bedroom-07": {
+      "space": "courtyard",
+      "area": "bedroom",
+      "file": "photos/courtyard/bedroom/courtyard-bedroom-07.png",
+      "original": "The Courtyard/courtyard-bedroom/courtyard-bedroom-view-7.png",
+      "width": 832,
+      "height": 627,
+      "sha1": "3f5ba4e4b6bb2886283b4b7c8aeef9f6c241a635",
+      "web": "photos/courtyard-bedroom-07.webp"
+    },
+    "courtyard-bedroom-08": {
+      "space": "courtyard",
+      "area": "bedroom",
+      "file": "photos/courtyard/bedroom/courtyard-bedroom-08.png",
+      "original": "The Courtyard/courtyard-bedroom/courtyard-bedroom-view-8.png",
+      "width": 832,
+      "height": 625,
+      "sha1": "7b681944bb52d637978a1c040493be59a1cecec9",
+      "web": "photos/courtyard-bedroom-08.webp"
+    },
+    "courtyard-bedroom-09": {
+      "space": "courtyard",
+      "area": "bedroom",
+      "file": "photos/courtyard/bedroom/courtyard-bedroom-09.png",
+      "original": "The Courtyard/courtyard-bedroom/courtyard-bedroom-view-9.png",
+      "width": 470,
+      "height": 622,
+      "sha1": "b3ea8ad7a2af53b8737d4b38bce54869baf63370",
+      "web": "photos/courtyard-bedroom-09.webp"
+    },
+    "courtyard-bedroom-10": {
+      "space": "courtyard",
+      "area": "bedroom",
+      "file": "photos/courtyard/bedroom/courtyard-bedroom-10.png",
+      "original": "The Courtyard/courtyard-bedroom/courtyard-bedroom-view-10.png",
+      "width": 832,
+      "height": 627,
+      "sha1": "602eb00fd4884acbe045056b5d918fc45b0228f3",
+      "web": "photos/courtyard-bedroom-10.webp"
+    },
+    "courtyard-bedroom-11": {
+      "space": "courtyard",
+      "area": "bedroom",
+      "file": "photos/courtyard/bedroom/courtyard-bedroom-11.png",
+      "original": "The Courtyard/courtyard-bedroom/courtyard-bedroom-view-11.png",
+      "width": 832,
+      "height": 626,
+      "sha1": "f2d96f147003eb14a3c5dac041809d6e7e8a14c9",
+      "web": "photos/courtyard-bedroom-11.webp"
+    },
+    "courtyard-bedroom-12": {
+      "space": "courtyard",
+      "area": "bedroom",
+      "file": "photos/courtyard/bedroom/courtyard-bedroom-12.png",
+      "original": "The Courtyard/courtyard-bedroom/courtyard-bedroom-view-12.png",
+      "width": 832,
+      "height": 625,
+      "sha1": "9540997b5a83967d137720370f4978311f311856",
+      "web": "photos/courtyard-bedroom-12.webp"
+    },
+    "courtyard-bedroom-13": {
+      "space": "courtyard",
+      "area": "bedroom",
+      "file": "photos/courtyard/bedroom/courtyard-bedroom-13.png",
+      "original": "The Courtyard/courtyard-bedroom/courtyard-bedroom-view-13.png",
+      "width": 832,
+      "height": 627,
+      "sha1": "5814c67455a55f188a4ece22128811f413858549",
+      "web": "photos/courtyard-bedroom-13.webp"
+    },
+    "courtyard-garden-01": {
+      "space": "courtyard",
+      "area": "garden",
+      "file": "photos/courtyard/garden/courtyard-garden-01.png",
+      "original": "The Courtyard/courtyard-garden/courtyard-garden-view-1.png",
+      "width": 467,
+      "height": 627,
+      "sha1": "a426ff71cfef36a1b0cec183b0261e7e7e543663",
+      "web": "photos/courtyard-garden-01.webp"
+    },
+    "courtyard-garden-02": {
+      "space": "courtyard",
+      "area": "garden",
+      "file": "photos/courtyard/garden/courtyard-garden-02.png",
+      "original": "The Courtyard/courtyard-garden/courtyard-garden-view-2.png",
+      "width": 542,
+      "height": 626,
+      "sha1": "5c1a19219d9b986281fe36133866e801cebc5634",
+      "web": "photos/courtyard-garden-02.webp"
+    },
+    "courtyard-garden-03": {
+      "space": "courtyard",
+      "area": "garden",
+      "file": "photos/courtyard/garden/courtyard-garden-03.png",
+      "original": "The Courtyard/courtyard-garden/courtyard-garden-view-3.png",
+      "width": 465,
+      "height": 626,
+      "sha1": "5c56a9ec2c7e4ee184c2989d6385ba6ede1289d7",
+      "web": "photos/courtyard-garden-03.webp"
+    },
+    "courtyard-garden-04": {
+      "space": "courtyard",
+      "area": "garden",
+      "file": "photos/courtyard/garden/courtyard-garden-04.png",
+      "original": "The Courtyard/courtyard-garden/courtyard-garden-view-4.png",
+      "width": 465,
+      "height": 625,
+      "sha1": "125f0b52890a4f6d9048638d8f23e4de8a86aadd",
+      "web": "photos/courtyard-garden-04.webp"
+    },
+    "courtyard-garden-05": {
+      "space": "courtyard",
+      "area": "garden",
+      "file": "photos/courtyard/garden/courtyard-garden-05.png",
+      "original": "The Courtyard/courtyard-garden/courtyard-garden-view-5.png",
+      "width": 426,
+      "height": 622,
+      "sha1": "246c706833401a7cc309aea6ae62622810a5fa3c",
+      "web": "photos/courtyard-garden-05.webp"
+    },
+    "courtyard-garden-06": {
+      "space": "courtyard",
+      "area": "garden",
+      "file": "photos/courtyard/garden/courtyard-garden-06.png",
+      "original": "The Courtyard/courtyard-garden/courtyard-garden-view-6.png",
+      "width": 470,
+      "height": 626,
+      "sha1": "13e7cbd5bafc9b9e6fe4c1d03622e0432625bbe4",
+      "web": "photos/courtyard-garden-06.webp"
+    },
+    "courtyard-garden-07": {
+      "space": "courtyard",
+      "area": "garden",
+      "file": "photos/courtyard/garden/courtyard-garden-07.png",
+      "original": "The Courtyard/courtyard-garden/courtyard-garden-view-7.png",
+      "width": 507,
+      "height": 627,
+      "sha1": "4249b240622226e68c08b029af28a1fcece69c18",
+      "web": "photos/courtyard-garden-07.webp"
+    },
+    "courtyard-garden-08": {
+      "space": "courtyard",
+      "area": "garden",
+      "file": "photos/courtyard/garden/courtyard-garden-08.png",
+      "original": "The Courtyard/courtyard-garden/courtyard-garden-view-8.png",
+      "width": 832,
+      "height": 622,
+      "sha1": "826933395e88e19c0d2b63afb68ab57db38a773c",
+      "web": "photos/courtyard-garden-08.webp"
+    },
+    "courtyard-garden-09": {
+      "space": "courtyard",
+      "area": "garden",
+      "file": "photos/courtyard/garden/courtyard-garden-09.png",
+      "original": "The Courtyard/courtyard-garden/courtyard-garden-view-9.png",
+      "width": 465,
+      "height": 627,
+      "sha1": "b40345a16770d5a7b03187d1e62fdf7ae897053f",
+      "web": "photos/courtyard-garden-09.webp"
+    },
+    "courtyard-garden-10": {
+      "space": "courtyard",
+      "area": "garden",
+      "file": "photos/courtyard/garden/courtyard-garden-10.png",
+      "original": "The Courtyard/courtyard-garden/courtyard-garden-view-10.png",
+      "width": 542,
+      "height": 622,
+      "sha1": "7d81ed6b328b28028f024da6da6af1d23a689b5b",
+      "web": "photos/courtyard-garden-10.webp"
+    },
+    "courtyard-garden-11": {
+      "space": "courtyard",
+      "area": "garden",
+      "file": "photos/courtyard/garden/courtyard-garden-11.png",
+      "original": "The Courtyard/courtyard-garden/courtyard-garden-view-11.png",
+      "width": 467,
+      "height": 627,
+      "sha1": "d40e7ae36f703f492f35fe64d67a5fb6e7be5a8d",
+      "web": "photos/courtyard-garden-11.webp"
+    },
+    "courtyard-garden-12": {
+      "space": "courtyard",
+      "area": "garden",
+      "file": "photos/courtyard/garden/courtyard-garden-12.png",
+      "original": "The Courtyard/courtyard-garden/courtyard-garden-view-12.png",
+      "width": 470,
+      "height": 622,
+      "sha1": "103695d91560c8ef45cb81a378cac7785083fa9a",
+      "web": "photos/courtyard-garden-12.webp"
+    },
+    "courtyard-garden-13": {
+      "space": "courtyard",
+      "area": "garden",
+      "file": "photos/courtyard/garden/courtyard-garden-13.png",
+      "original": "The Courtyard/courtyard-garden/courtyard-garden-view-13.png",
+      "width": 896,
+      "height": 622,
+      "sha1": "123adc0e8c6b1d7364c52086820989cfe02721e5",
+      "web": "photos/courtyard-garden-13.webp"
+    },
+    "courtyard-garden-14": {
+      "space": "courtyard",
+      "area": "garden",
+      "file": "photos/courtyard/garden/courtyard-garden-14.png",
+      "original": "The Courtyard/courtyard-garden/courtyard-garden-view-14.png",
+      "width": 472,
+      "height": 627,
+      "sha1": "dd35c971f16edd3cee44093bf0508ef701abf7fd",
+      "web": "photos/courtyard-garden-14.webp"
+    },
+    "courtyard-garden-15": {
+      "space": "courtyard",
+      "area": "garden",
+      "file": "photos/courtyard/garden/courtyard-garden-15.png",
+      "original": "The Courtyard/courtyard-garden/courtyard-garden-view-15.png",
+      "width": 470,
+      "height": 622,
+      "sha1": "bee37dd2dcc1a8f67a5d6b2da2c9a0ebce390b3c",
+      "web": "photos/courtyard-garden-15.webp"
+    },
+    "courtyard-garden-16": {
+      "space": "courtyard",
+      "area": "garden",
+      "file": "photos/courtyard/garden/courtyard-garden-16.png",
+      "original": "The Courtyard/courtyard-garden/courtyard-garden-view-16.png",
+      "width": 466,
+      "height": 627,
+      "sha1": "f54d89ea37f3122e7958e01a15fb719dd2900cf7",
+      "web": "photos/courtyard-garden-16.webp"
+    },
+    "courtyard-garden-17": {
+      "space": "courtyard",
+      "area": "garden",
+      "file": "photos/courtyard/garden/courtyard-garden-17.png",
+      "original": "The Courtyard/courtyard-garden/courtyard-garden-view-17.png",
+      "width": 746,
+      "height": 622,
+      "sha1": "028c5ff86ca528dea59d4f0a9acd972a04be0340",
+      "web": "photos/courtyard-garden-17.webp"
+    },
+    "courtyard-garden-18": {
+      "space": "courtyard",
+      "area": "garden",
+      "file": "photos/courtyard/garden/courtyard-garden-18.png",
+      "original": "The Courtyard/courtyard-garden/courtyard-garden-view-18.png",
+      "width": 832,
+      "height": 626,
+      "sha1": "c4bb083e84f499ad669125f1116a69dfc8f08150",
+      "web": "photos/courtyard-garden-18.webp"
+    },
+    "courtyard-garden-19": {
+      "space": "courtyard",
+      "area": "garden",
+      "file": "photos/courtyard/garden/courtyard-garden-19.png",
+      "original": "The Courtyard/courtyard-garden/courtyard-garden-view-19.png",
+      "width": 467,
+      "height": 625,
+      "sha1": "3d5b37241066c7126f037ce917afe96fdd0daa54",
+      "web": "photos/courtyard-garden-19.webp"
+    },
+    "courtyard-garden-20": {
+      "space": "courtyard",
+      "area": "garden",
+      "file": "photos/courtyard/garden/courtyard-garden-20.png",
+      "original": "The Courtyard/courtyard-garden/courtyard-garden-view-20.png",
+      "width": 832,
+      "height": 627,
+      "sha1": "6105d8ecc536f2a920b2e4b69816850afa7f94a8",
+      "web": "photos/courtyard-garden-20.webp"
+    },
+    "courtyard-garden-21": {
+      "space": "courtyard",
+      "area": "garden",
+      "file": "photos/courtyard/garden/courtyard-garden-21.png",
+      "original": "The Courtyard/courtyard-garden/courtyard-garden-view-21.png",
+      "width": 465,
+      "height": 622,
+      "sha1": "82447985ef51773857667ef9c666680621bc2dbc",
+      "web": "photos/courtyard-garden-21.webp"
+    },
+    "courtyard-kitchen-01": {
+      "space": "courtyard",
+      "area": "kitchen",
+      "file": "photos/courtyard/kitchen/courtyard-kitchen-01.png",
+      "original": "The Courtyard/courtyard-kitchen/courtyard-kitchen-view-1.png",
+      "width": 465,
+      "height": 622,
+      "sha1": "4a706d78f226288d21f48eef9914b25a2ef1bcc4",
+      "web": "photos/courtyard-kitchen-01.webp"
+    },
+    "courtyard-kitchen-02": {
+      "space": "courtyard",
+      "area": "kitchen",
+      "file": "photos/courtyard/kitchen/courtyard-kitchen-02.png",
+      "original": "The Courtyard/courtyard-kitchen/courtyard-kitchen-view-2.png",
+      "width": 466,
+      "height": 622,
+      "sha1": "66557316d6c5eebb6de6af72cc42ce680a61f0d2",
+      "web": "photos/courtyard-kitchen-02.webp"
+    },
+    "courtyard-kitchen-03": {
+      "space": "courtyard",
+      "area": "kitchen",
+      "file": "photos/courtyard/kitchen/courtyard-kitchen-03.png",
+      "original": "The Courtyard/courtyard-kitchen/courtyard-kitchen-view-3.png",
+      "width": 467,
+      "height": 622,
+      "sha1": "a8ce6bf808a5bd3bffa398286f85190a3fda57b0",
+      "web": "photos/courtyard-kitchen-03.webp"
+    },
+    "courtyard-kitchen-04": {
+      "space": "courtyard",
+      "area": "kitchen",
+      "file": "photos/courtyard/kitchen/courtyard-kitchen-04.png",
+      "original": "The Courtyard/courtyard-kitchen/courtyard-kitchen-view-4.png",
+      "width": 470,
+      "height": 627,
+      "sha1": "764d748b8e516f25c3e8ab5d8fdd7423e4a31c2d",
+      "web": "photos/courtyard-kitchen-04.webp"
+    },
+    "courtyard-kitchen-05": {
+      "space": "courtyard",
+      "area": "kitchen",
+      "file": "photos/courtyard/kitchen/courtyard-kitchen-05.png",
+      "original": "The Courtyard/courtyard-kitchen/courtyard-kitchen-view-5.png",
+      "width": 470,
+      "height": 622,
+      "sha1": "7dcc8b6b771ec0f45b0393a4921854d05337c544",
+      "web": "photos/courtyard-kitchen-05.webp"
+    },
+    "courtyard-kitchen-06": {
+      "space": "courtyard",
+      "area": "kitchen",
+      "file": "photos/courtyard/kitchen/courtyard-kitchen-06.png",
+      "original": "The Courtyard/courtyard-kitchen/courtyard-kitchen-view-6.png",
+      "width": 467,
+      "height": 627,
+      "sha1": "967e2089bd0b8b07b1783383cf3c3ad069f5890e",
+      "web": "photos/courtyard-kitchen-06.webp"
+    },
+    "courtyard-kitchen-07": {
+      "space": "courtyard",
+      "area": "kitchen",
+      "file": "photos/courtyard/kitchen/courtyard-kitchen-07.png",
+      "original": "The Courtyard/courtyard-kitchen/courtyard-kitchen-view-7.png",
+      "width": 470,
+      "height": 627,
+      "sha1": "9bbf6c4380c13a693eb32715d8f0e8a7eb5c94ab",
+      "web": "photos/courtyard-kitchen-07.webp"
+    },
+    "courtyard-kitchen-08": {
+      "space": "courtyard",
+      "area": "kitchen",
+      "file": "photos/courtyard/kitchen/courtyard-kitchen-08.png",
+      "original": "The Courtyard/courtyard-kitchen/courtyard-kitchen-view-8.png",
+      "width": 832,
+      "height": 626,
+      "sha1": "660161bb80f823570cf8cbd6eb008bcd27dec7fa",
+      "web": "photos/courtyard-kitchen-08.webp"
+    },
+    "courtyard-kitchen-09": {
+      "space": "courtyard",
+      "area": "kitchen",
+      "file": "photos/courtyard/kitchen/courtyard-kitchen-09.png",
+      "original": "The Courtyard/courtyard-kitchen/courtyard-kitchen-view-9.png",
+      "width": 470,
+      "height": 627,
+      "sha1": "f77d8063cd914315a88dfa718b2716f3d79938b5",
+      "web": "photos/courtyard-kitchen-09.webp"
+    },
+    "courtyard-kitchen-10": {
+      "space": "courtyard",
+      "area": "kitchen",
+      "file": "photos/courtyard/kitchen/courtyard-kitchen-10.png",
+      "original": "The Courtyard/courtyard-kitchen/courtyard-kitchen-view-10.png",
+      "width": 467,
+      "height": 627,
+      "sha1": "34fd4aea054ed4d11b287ec01c32c6484a724c04",
+      "web": "photos/courtyard-kitchen-10.webp"
+    },
+    "courtyard-living-space-01": {
+      "space": "courtyard",
+      "area": "living-space",
+      "file": "photos/courtyard/living-space/courtyard-living-space-01.png",
+      "original": "The Courtyard/courtyard-living-space/courtyard-livingspace-view-1.png",
+      "width": 467,
+      "height": 636,
+      "sha1": "88fa0f8a4406295f3df4c122baa1cdac9b100179",
+      "web": "photos/courtyard-living-space-01.webp"
+    },
+    "courtyard-living-space-02": {
+      "space": "courtyard",
+      "area": "living-space",
+      "file": "photos/courtyard/living-space/courtyard-living-space-02.png",
+      "original": "The Courtyard/courtyard-living-space/courtyard-livingspace-view-2.png",
+      "width": 832,
+      "height": 622,
+      "sha1": "ec77d2c436549044ee212613afddc1328ee1da26",
+      "web": "photos/courtyard-living-space-02.webp"
+    },
+    "courtyard-living-space-03": {
+      "space": "courtyard",
+      "area": "living-space",
+      "file": "photos/courtyard/living-space/courtyard-living-space-03.png",
+      "original": "The Courtyard/courtyard-living-space/courtyard-livingspace-view-3.png",
+      "width": 470,
+      "height": 622,
+      "sha1": "f36f12452a0a5ba7f13603476d59ebcb413be75c",
+      "web": "photos/courtyard-living-space-03.webp"
+    },
+    "courtyard-living-space-04": {
+      "space": "courtyard",
+      "area": "living-space",
+      "file": "photos/courtyard/living-space/courtyard-living-space-04.png",
+      "original": "The Courtyard/courtyard-living-space/courtyard-livingspace-view-4.png",
+      "width": 466,
+      "height": 622,
+      "sha1": "c8c5fc97af67cdfa3e97901cee1848f95bed3529",
+      "web": "photos/courtyard-living-space-04.webp"
+    },
+    "courtyard-living-space-05": {
+      "space": "courtyard",
+      "area": "living-space",
+      "file": "photos/courtyard/living-space/courtyard-living-space-05.png",
+      "original": "The Courtyard/courtyard-living-space/courtyard-livingspace-view-5.png",
+      "width": 462,
+      "height": 627,
+      "sha1": "be63977c5fd9220fd6a749c8bc15ddb644df775e",
+      "web": "photos/courtyard-living-space-05.webp"
+    },
+    "courtyard-living-space-06": {
+      "space": "courtyard",
+      "area": "living-space",
+      "file": "photos/courtyard/living-space/courtyard-living-space-06.png",
+      "original": "The Courtyard/courtyard-living-space/courtyard-livingspace-view-6.png",
+      "width": 465,
+      "height": 622,
+      "sha1": "7e9114f220e53722c450ac1e1e7ff119dfdd37bc",
+      "web": "photos/courtyard-living-space-06.webp"
+    },
+    "courtyard-living-space-07": {
+      "space": "courtyard",
+      "area": "living-space",
+      "file": "photos/courtyard/living-space/courtyard-living-space-07.png",
+      "original": "The Courtyard/courtyard-living-space/courtyard-livingspace-view-7.png",
+      "width": 832,
+      "height": 626,
+      "sha1": "ac80b3612cf217d3649998ceb6f5a74fd303b7e7",
+      "web": "photos/courtyard-living-space-07.webp"
+    },
+    "nook-bathroom-01": {
+      "space": "nook",
+      "area": "bathroom",
+      "file": "photos/nook/bathroom/nook-bathroom-01.png",
+      "original": "The Nook/nook-bathroom/nook-bathroom-view-1.png",
+      "width": 465,
+      "height": 627,
+      "sha1": "eedcec8106fba600dc3abb6787dfbd0d40648518",
+      "web": "photos/nook-bathroom-01.webp"
+    },
+    "nook-bathroom-02": {
+      "space": "nook",
+      "area": "bathroom",
+      "file": "photos/nook/bathroom/nook-bathroom-02.png",
+      "original": "The Nook/nook-bathroom/nook-bathroom-view-2.png",
+      "width": 467,
+      "height": 626,
+      "sha1": "c07e1764ca4c0ad020b5a9fb9c4c1c710fb6b8b9",
+      "web": "photos/nook-bathroom-02.webp"
+    },
+    "nook-bedroom-01": {
+      "space": "nook",
+      "area": "bedroom",
+      "file": "photos/nook/bedroom/nook-bedroom-01.png",
+      "original": "The Nook/nook-bedroom/nook-bedroom-view-1.png",
+      "width": 827,
+      "height": 622,
+      "sha1": "c5a29a5940ad076bd4548f4801839f63e61e6511",
+      "web": "photos/nook-bedroom-01.webp"
+    },
+    "nook-bedroom-02": {
+      "space": "nook",
+      "area": "bedroom",
+      "file": "photos/nook/bedroom/nook-bedroom-02.png",
+      "original": "The Nook/nook-bedroom/nook-bedroom-view-2.png",
+      "width": 465,
+      "height": 625,
+      "sha1": "c6ce7e3651962dcd84de0c31b6f87e51f3a36dc8",
+      "web": "photos/nook-bedroom-02.webp"
+    },
+    "nook-bedroom-03": {
+      "space": "nook",
+      "area": "bedroom",
+      "file": "photos/nook/bedroom/nook-bedroom-03.png",
+      "original": "The Nook/nook-bedroom/nook-bedroom-view-3.png",
+      "width": 491,
+      "height": 626,
+      "sha1": "e090dde1807623be97911783e4622aa26e702c8b",
+      "web": "photos/nook-bedroom-03.webp"
+    },
+    "nook-bedroom-04": {
+      "space": "nook",
+      "area": "bedroom",
+      "file": "photos/nook/bedroom/nook-bedroom-04.png",
+      "original": "The Nook/nook-bedroom/nook-bedroom-view-4.png",
+      "width": 836,
+      "height": 627,
+      "sha1": "ba44d46d43579d307b0b7927af09dbff69aa0335",
+      "web": "photos/nook-bedroom-04.webp"
+    },
+    "nook-bedroom-05": {
+      "space": "nook",
+      "area": "bedroom",
+      "file": "photos/nook/bedroom/nook-bedroom-05.png",
+      "original": "The Nook/nook-bedroom/nook-bedroom-view-5.png",
+      "width": 825,
+      "height": 622,
+      "sha1": "aa0cbaa35aa572ecb4e5deeb6891f46e4ee2c49d",
+      "web": "photos/nook-bedroom-05.webp"
+    },
+    "nook-bedroom-06": {
+      "space": "nook",
+      "area": "bedroom",
+      "file": "photos/nook/bedroom/nook-bedroom-06.png",
+      "original": "The Nook/nook-bedroom/nook-bedroom-view-6.png",
+      "width": 465,
+      "height": 622,
+      "sha1": "2e6664e27f861b4417baa079ac6dcfe4e06942db",
+      "web": "photos/nook-bedroom-06.webp"
+    },
+    "nook-bedroom-07": {
+      "space": "nook",
+      "area": "bedroom",
+      "file": "photos/nook/bedroom/nook-bedroom-07.png",
+      "original": "The Nook/nook-bedroom/nook-bedroom-view-7.png",
+      "width": 467,
+      "height": 622,
+      "sha1": "98c5243db6d7becbf914954c8f7367abadf66f3e",
+      "web": "photos/nook-bedroom-07.webp"
+    },
+    "nook-bedroom-08": {
+      "space": "nook",
+      "area": "bedroom",
+      "file": "photos/nook/bedroom/nook-bedroom-08.png",
+      "original": "The Nook/nook-bedroom/nook-bedroom-view-8.png",
+      "width": 902,
+      "height": 617,
+      "sha1": "26338727b02df191feb7ca8ed87068a4a6195230",
+      "web": "photos/nook-bedroom-08.webp"
+    },
+    "nook-bedroom-09": {
+      "space": "nook",
+      "area": "bedroom",
+      "file": "photos/nook/bedroom/nook-bedroom-09.png",
+      "original": "The Nook/nook-bedroom/nook-bedroom-view-9.png",
+      "width": 830,
+      "height": 625,
+      "sha1": "98a6f20e5c1d167a0f341aabc7476b2811032cb3",
+      "web": "photos/nook-bedroom-09.webp"
+    },
+    "nook-bedroom-10": {
+      "space": "nook",
+      "area": "bedroom",
+      "file": "photos/nook/bedroom/nook-bedroom-10.png",
+      "original": "The Nook/nook-bedroom/nook-bedroom-view-10.png",
+      "width": 832,
+      "height": 626,
+      "sha1": "c1a24be1d290188a85098972c7be5f4e5d7067e4",
+      "web": "photos/nook-bedroom-10.webp"
+    },
+    "nook-bedroom-11": {
+      "space": "nook",
+      "area": "bedroom",
+      "file": "photos/nook/bedroom/nook-bedroom-11.png",
+      "original": "The Nook/nook-bedroom/nook-bedroom-view-11.png",
+      "width": 470,
+      "height": 625,
+      "sha1": "1c304b23b4ccdaaeaa949c8694ba26e1faa08414",
+      "web": "photos/nook-bedroom-11.webp"
+    },
+    "nook-bedroom-12": {
+      "space": "nook",
+      "area": "bedroom",
+      "file": "photos/nook/bedroom/nook-bedroom-12.png",
+      "original": "The Nook/nook-bedroom/nook-bedroom-view-12.png",
+      "width": 470,
+      "height": 622,
+      "sha1": "37a3cfa9f6c0c552c34c4037b45471d8b4c3f8bb",
+      "web": "photos/nook-bedroom-12.webp"
+    },
+    "nook-bedroom-13": {
+      "space": "nook",
+      "area": "bedroom",
+      "file": "photos/nook/bedroom/nook-bedroom-13.png",
+      "original": "The Nook/nook-bedroom/nook-bedroom-view-13.png",
+      "width": 470,
+      "height": 627,
+      "sha1": "382d71c02ec42a2e8df1333b23bb7a2821b8ee8d",
+      "web": "photos/nook-bedroom-13.webp"
+    },
+    "nook-bedroom-14": {
+      "space": "nook",
+      "area": "bedroom",
+      "file": "photos/nook/bedroom/nook-bedroom-14.png",
+      "original": "The Nook/nook-bedroom/nook-bedroom-view-14.png",
+      "width": 822,
+      "height": 625,
+      "sha1": "9f508cd69361f1c3460656be685ef596f8f81c84",
+      "web": "photos/nook-bedroom-14.webp"
+    },
+    "nook-garden-01": {
+      "space": "nook",
+      "area": "garden",
+      "file": "photos/nook/garden/nook-garden-01.png",
+      "original": "The Nook/nook-garden/nook-garden-view-1.png",
+      "width": 462,
+      "height": 622,
+      "sha1": "82ac090a33998ec72c6dd4a26a70c52ef27d66f7",
+      "web": "photos/nook-garden-01.webp"
+    },
+    "nook-garden-02": {
+      "space": "nook",
+      "area": "garden",
+      "file": "photos/nook/garden/nook-garden-02.png",
+      "original": "The Nook/nook-garden/nook-garden-view-2.png",
+      "width": 467,
+      "height": 625,
+      "sha1": "c08b010df547ca3cbef6741b5013f18caa726f20",
+      "web": "photos/nook-garden-02.webp"
+    },
+    "nook-kitchen-01": {
+      "space": "nook",
+      "area": "kitchen",
+      "file": "photos/nook/kitchen/nook-kitchen-01.png",
+      "original": "The Nook/nook-kitchen/nook-kitchen-view-1.png",
+      "width": 462,
+      "height": 625,
+      "sha1": "c0302769770b377e0ac6a959e9b30e51caeb3808",
+      "web": "photos/nook-kitchen-01.webp"
+    },
+    "nook-kitchen-02": {
+      "space": "nook",
+      "area": "kitchen",
+      "file": "photos/nook/kitchen/nook-kitchen-02.png",
+      "original": "The Nook/nook-kitchen/nook-kitchen-view-2.png",
+      "width": 467,
+      "height": 622,
+      "sha1": "659a062995082f5fb65911cbcc6012dad810d50b",
+      "web": "photos/nook-kitchen-02.webp"
+    },
+    "nook-kitchen-03": {
+      "space": "nook",
+      "area": "kitchen",
+      "file": "photos/nook/kitchen/nook-kitchen-03.png",
+      "original": "The Nook/nook-kitchen/nook-kitchen-view-3.png",
+      "width": 467,
+      "height": 621,
+      "sha1": "dbb648c63134fb2aeb107345b15bf98955253593",
+      "web": "photos/nook-kitchen-03.webp"
+    },
+    "nook-kitchen-04": {
+      "space": "nook",
+      "area": "kitchen",
+      "file": "photos/nook/kitchen/nook-kitchen-04.png",
+      "original": "The Nook/nook-kitchen/nook-kitchen-view-4.png",
+      "width": 420,
+      "height": 626,
+      "sha1": "9178f643ef0b6d0c737deaff8b72b373723c6722",
+      "web": "photos/nook-kitchen-04.webp"
+    },
+    "nook-kitchen-05": {
+      "space": "nook",
+      "area": "kitchen",
+      "file": "photos/nook/kitchen/nook-kitchen-05.png",
+      "original": "The Nook/nook-kitchen/nook-kitchen-view-5.png",
+      "width": 835,
+      "height": 622,
+      "sha1": "95a0f5cf4532b7f81eb107ced85a4466519f7758",
+      "web": "photos/nook-kitchen-05.webp"
+    },
+    "retreat-bathroom-01": {
+      "space": "retreat",
+      "area": "bathroom",
+      "file": "photos/retreat/bathroom/retreat-bathroom-01.png",
+      "original": "The Retreat/retreat-bathroom/retreat-bathroom-view-1.png",
+      "width": 835,
+      "height": 625,
+      "sha1": "92ca3786b75179984ae31db3d1f14544aa248e62",
+      "web": "photos/retreat-bathroom-01.webp"
+    },
+    "retreat-bathroom-02": {
+      "space": "retreat",
+      "area": "bathroom",
+      "file": "photos/retreat/bathroom/retreat-bathroom-02.png",
+      "original": "The Retreat/retreat-bathroom/retreat-bathroom-view-2.png",
+      "width": 467,
+      "height": 627,
+      "sha1": "f65e98c5ce528d1b8cb92be88bc700e98a7f9ab6",
+      "web": "photos/retreat-bathroom-02.webp"
+    },
+    "retreat-bathroom-03": {
+      "space": "retreat",
+      "area": "bathroom",
+      "file": "photos/retreat/bathroom/retreat-bathroom-03.png",
+      "original": "The Retreat/retreat-bathroom/retreat-bathroom-view-3.png",
+      "width": 467,
+      "height": 627,
+      "sha1": "5deb29d0fc414e5133ceab8f6a7f0e22806cfad3",
+      "web": "photos/retreat-bathroom-03.webp"
+    },
+    "retreat-bedroom-1-01": {
+      "space": "retreat",
+      "area": "bedroom-1",
+      "file": "photos/retreat/bedroom-1/retreat-bedroom-1-01.png",
+      "original": "The Retreat/retreat-bedroom-1/retreat-bedroom-1-view-1.png",
+      "width": 467,
+      "height": 627,
+      "sha1": "f3352bf60b8e9e14184e8017d524c14a139bd829",
+      "web": "photos/retreat-bedroom-1-01.webp"
+    },
+    "retreat-bedroom-1-02": {
+      "space": "retreat",
+      "area": "bedroom-1",
+      "file": "photos/retreat/bedroom-1/retreat-bedroom-1-02.png",
+      "original": "The Retreat/retreat-bedroom-1/retreat-bedroom-1-view-2.png",
+      "width": 467,
+      "height": 626,
+      "sha1": "b3066f1009e04a122245583590ce3c992b78cb75",
+      "web": "photos/retreat-bedroom-1-02.webp"
+    },
+    "retreat-bedroom-1-03": {
+      "space": "retreat",
+      "area": "bedroom-1",
+      "file": "photos/retreat/bedroom-1/retreat-bedroom-1-03.png",
+      "original": "The Retreat/retreat-bedroom-1/retreat-bedroom-1-view-3.png",
+      "width": 470,
+      "height": 626,
+      "sha1": "2a06d17afe56af4d11a9b424488d99dc6cf3fd9e",
+      "web": "photos/retreat-bedroom-1-03.webp"
+    },
+    "retreat-bedroom-1-04": {
+      "space": "retreat",
+      "area": "bedroom-1",
+      "file": "photos/retreat/bedroom-1/retreat-bedroom-1-04.png",
+      "original": "The Retreat/retreat-bedroom-1/retreat-bedroom-1-view-4.png",
+      "width": 832,
+      "height": 625,
+      "sha1": "cbd8f506fa6396f27dd1c94e332d5a9db86d9ba6",
+      "web": "photos/retreat-bedroom-1-04.webp"
+    },
+    "retreat-bedroom-1-05": {
+      "space": "retreat",
+      "area": "bedroom-1",
+      "file": "photos/retreat/bedroom-1/retreat-bedroom-1-05.png",
+      "original": "The Retreat/retreat-bedroom-1/retreat-bedroom-1-view-5.png",
+      "width": 470,
+      "height": 625,
+      "sha1": "144a3ca1ab2b7c518f85307d35a2cd23a23d2288",
+      "web": "photos/retreat-bedroom-1-05.webp"
+    },
+    "retreat-bedroom-1-06": {
+      "space": "retreat",
+      "area": "bedroom-1",
+      "file": "photos/retreat/bedroom-1/retreat-bedroom-1-06.png",
+      "original": "The Retreat/retreat-bedroom-1/retreat-bedroom-1-view-6.png",
+      "width": 832,
+      "height": 622,
+      "sha1": "11fba342db3465df5692d753fd96b2ac3dc24165",
+      "web": "photos/retreat-bedroom-1-06.webp"
+    },
+    "retreat-bedroom-1-07": {
+      "space": "retreat",
+      "area": "bedroom-1",
+      "file": "photos/retreat/bedroom-1/retreat-bedroom-1-07.png",
+      "original": "The Retreat/retreat-bedroom-1/retreat-bedroom-1-view-7.png",
+      "width": 465,
+      "height": 625,
+      "sha1": "f88a717ac6cb939c14bddec1dad1bc772b3f1017",
+      "web": "photos/retreat-bedroom-1-07.webp"
+    },
+    "retreat-bedroom-1-08": {
+      "space": "retreat",
+      "area": "bedroom-1",
+      "file": "photos/retreat/bedroom-1/retreat-bedroom-1-08.png",
+      "original": "The Retreat/retreat-bedroom-1/retreat-bedroom-1-view-8.png",
+      "width": 827,
+      "height": 617,
+      "sha1": "e900151511fe69d74b479057e91a8a0030a3bde1",
+      "web": "photos/retreat-bedroom-1-08.webp"
+    },
+    "retreat-bedroom-1-09": {
+      "space": "retreat",
+      "area": "bedroom-1",
+      "file": "photos/retreat/bedroom-1/retreat-bedroom-1-09.png",
+      "original": "The Retreat/retreat-bedroom-1/retreat-bedroom-1-view-9.png",
+      "width": 827,
+      "height": 627,
+      "sha1": "3b9be88b7958514f85ad7ab930cdad71836cfbe4",
+      "web": "photos/retreat-bedroom-1-09.webp"
+    },
+    "retreat-bedroom-2-01": {
+      "space": "retreat",
+      "area": "bedroom-2",
+      "file": "photos/retreat/bedroom-2/retreat-bedroom-2-01.png",
+      "original": "The Retreat/retreat-bedroom-2/retreat-bedroom-2-view-1.png",
+      "width": 467,
+      "height": 621,
+      "sha1": "ba0a8cb9a6f1484e09fff0603f33a30b2b54c358",
+      "web": "photos/retreat-bedroom-2-01.webp"
+    },
+    "retreat-bedroom-2-02": {
+      "space": "retreat",
+      "area": "bedroom-2",
+      "file": "photos/retreat/bedroom-2/retreat-bedroom-2-02.png",
+      "original": "The Retreat/retreat-bedroom-2/retreat-bedroom-2-view-2.png",
+      "width": 461,
+      "height": 620,
+      "sha1": "20212d77592eaec0462b28d80b48bf59a30fe1ec",
+      "web": "photos/retreat-bedroom-2-02.webp"
+    },
+    "retreat-bedroom-2-03": {
+      "space": "retreat",
+      "area": "bedroom-2",
+      "file": "photos/retreat/bedroom-2/retreat-bedroom-2-03.png",
+      "original": "The Retreat/retreat-bedroom-2/retreat-bedroom-2-view-3.png",
+      "width": 465,
+      "height": 625,
+      "sha1": "b34588cf5b22c7ca7b6a61d1f8976201335204af",
+      "web": "photos/retreat-bedroom-2-03.webp"
+    },
+    "retreat-bedroom-2-04": {
+      "space": "retreat",
+      "area": "bedroom-2",
+      "file": "photos/retreat/bedroom-2/retreat-bedroom-2-04.png",
+      "original": "The Retreat/retreat-bedroom-2/retreat-bedroom-2-view-4.png",
+      "width": 465,
+      "height": 621,
+      "sha1": "6c92c00dcd9e5479f8710cccc2b6c3441cd6cff8",
+      "web": "photos/retreat-bedroom-2-04.webp"
+    },
+    "retreat-bedroom-2-05": {
+      "space": "retreat",
+      "area": "bedroom-2",
+      "file": "photos/retreat/bedroom-2/retreat-bedroom-2-05.png",
+      "original": "The Retreat/retreat-bedroom-2/retreat-bedroom-2-view-5.png",
+      "width": 467,
+      "height": 622,
+      "sha1": "79794f21a46e962df2545e000649daa6daafe10f",
+      "web": "photos/retreat-bedroom-2-05.webp"
+    },
+    "retreat-bedroom-2-06": {
+      "space": "retreat",
+      "area": "bedroom-2",
+      "file": "photos/retreat/bedroom-2/retreat-bedroom-2-06.png",
+      "original": "The Retreat/retreat-bedroom-2/retreat-bedroom-2-view-6.png",
+      "width": 467,
+      "height": 625,
+      "sha1": "86dc41b88010986b3c7e42e435e059ce71a63784",
+      "web": "photos/retreat-bedroom-2-06.webp"
+    },
+    "retreat-bedroom-2-07": {
+      "space": "retreat",
+      "area": "bedroom-2",
+      "file": "photos/retreat/bedroom-2/retreat-bedroom-2-07.png",
+      "original": "The Retreat/retreat-bedroom-2/retreat-bedroom-2-view-7.png",
+      "width": 832,
+      "height": 625,
+      "sha1": "23c50ff782b4a620111fa1b98725159068becc19",
+      "web": "photos/retreat-bedroom-2-07.webp"
+    },
+    "retreat-bedroom-2-08": {
+      "space": "retreat",
+      "area": "bedroom-2",
+      "file": "photos/retreat/bedroom-2/retreat-bedroom-2-08.png",
+      "original": "The Retreat/retreat-bedroom-2/retreat-bedroom-2-view-8.png",
+      "width": 465,
+      "height": 622,
+      "sha1": "cb4aecbeea7b91e49d051ebc25f8614e55f07113",
+      "web": "photos/retreat-bedroom-2-08.webp"
+    },
+    "retreat-bedroom-2-09": {
+      "space": "retreat",
+      "area": "bedroom-2",
+      "file": "photos/retreat/bedroom-2/retreat-bedroom-2-09.png",
+      "original": "The Retreat/retreat-bedroom-2/retreat-bedroom-2-view-9.png",
+      "width": 835,
+      "height": 626,
+      "sha1": "dea235e0a20420affd88a143f29bfcdf9326c043",
+      "web": "photos/retreat-bedroom-2-09.webp"
+    },
+    "retreat-garden-inner-courtyard-01": {
+      "space": "retreat",
+      "area": "garden-inner-courtyard",
+      "file": "photos/retreat/garden-inner-courtyard/retreat-garden-inner-courtyard-01.png",
+      "original": "The Retreat/retreat-garden-inner-courtyard/retreat-garden-view-1.png",
+      "width": 467,
+      "height": 626,
+      "sha1": "f32c3d4dd23b1e317451f027f95573263abbcbeb",
+      "web": "photos/retreat-garden-inner-courtyard-01.webp"
+    },
+    "retreat-garden-inner-courtyard-02": {
+      "space": "retreat",
+      "area": "garden-inner-courtyard",
+      "file": "photos/retreat/garden-inner-courtyard/retreat-garden-inner-courtyard-02.png",
+      "original": "The Retreat/retreat-garden-inner-courtyard/retreat-garden-view-2.png",
+      "width": 465,
+      "height": 625,
+      "sha1": "0ccaeb3f0f7bffb1b0c34708e369e9dddb9c8854",
+      "web": "photos/retreat-garden-inner-courtyard-02.webp"
+    },
+    "retreat-garden-inner-courtyard-03": {
+      "space": "retreat",
+      "area": "garden-inner-courtyard",
+      "file": "photos/retreat/garden-inner-courtyard/retreat-garden-inner-courtyard-03.png",
+      "original": "The Retreat/retreat-garden-inner-courtyard/retreat-garden-inner-courtyard-view-1.png",
+      "width": 462,
+      "height": 626,
+      "sha1": "72ada3c37e583f63df105dd6d1834d496a58b778",
+      "web": "photos/retreat-garden-inner-courtyard-03.webp"
+    },
+    "retreat-garden-inner-courtyard-04": {
+      "space": "retreat",
+      "area": "garden-inner-courtyard",
+      "file": "photos/retreat/garden-inner-courtyard/retreat-garden-inner-courtyard-04.png",
+      "original": "The Retreat/retreat-garden-inner-courtyard/retreat-garden-inner-courtyard-view-2.png",
+      "width": 460,
+      "height": 620,
+      "sha1": "3f492bc8f6ca62fa89f7b8e50f1b4e109e29318a",
+      "web": "photos/retreat-garden-inner-courtyard-04.webp"
+    },
+    "retreat-garden-inner-courtyard-05": {
+      "space": "retreat",
+      "area": "garden-inner-courtyard",
+      "file": "photos/retreat/garden-inner-courtyard/retreat-garden-inner-courtyard-05.png",
+      "original": "The Retreat/retreat-garden-inner-courtyard/retreat-garden-inner-courtyard-view-3.png",
+      "width": 911,
+      "height": 622,
+      "sha1": "3050c4338c430f67019baf6ac98f2c1b1a6b70d2",
+      "web": "photos/retreat-garden-inner-courtyard-05.webp"
+    },
+    "retreat-garden-inner-courtyard-06": {
+      "space": "retreat",
+      "area": "garden-inner-courtyard",
+      "file": "photos/retreat/garden-inner-courtyard/retreat-garden-inner-courtyard-06.png",
+      "original": "The Retreat/retreat-garden-inner-courtyard/retreat-garden-inner-courtyard-view-4.png",
+      "width": 830,
+      "height": 622,
+      "sha1": "3ba95958ae3b8c0e65a13aaf5958bca22c7a2172",
+      "web": "photos/retreat-garden-inner-courtyard-06.webp"
+    },
+    "retreat-garden-inner-courtyard-07": {
+      "space": "retreat",
+      "area": "garden-inner-courtyard",
+      "file": "photos/retreat/garden-inner-courtyard/retreat-garden-inner-courtyard-07.png",
+      "original": "The Retreat/retreat-garden-inner-courtyard/retreat-garden-inner-courtyard-view-5.png",
+      "width": 832,
+      "height": 622,
+      "sha1": "6c32e4cf728ba14aa1495eb56a80fb10e4e22970",
+      "web": "photos/retreat-garden-inner-courtyard-07.webp"
+    },
+    "retreat-garden-inner-courtyard-08": {
+      "space": "retreat",
+      "area": "garden-inner-courtyard",
+      "file": "photos/retreat/garden-inner-courtyard/retreat-garden-inner-courtyard-08.png",
+      "original": "The Retreat/retreat-garden-inner-courtyard/retreat-garden-inner-courtyard-view-6.png",
+      "width": 832,
+      "height": 626,
+      "sha1": "378b092c780ca73e31f0e96090cec99657c4f642",
+      "web": "photos/retreat-garden-inner-courtyard-08.webp"
+    },
+    "retreat-garden-inner-courtyard-09": {
+      "space": "retreat",
+      "area": "garden-inner-courtyard",
+      "file": "photos/retreat/garden-inner-courtyard/retreat-garden-inner-courtyard-09.png",
+      "original": "The Retreat/retreat-garden-inner-courtyard/retreat-garden-inner-courtyard-view-7.png",
+      "width": 467,
+      "height": 625,
+      "sha1": "5018fb3a58d0b55dbd8b4f6362c5f588023bbb72",
+      "web": "photos/retreat-garden-inner-courtyard-09.webp"
+    },
+    "retreat-garden-inner-courtyard-10": {
+      "space": "retreat",
+      "area": "garden-inner-courtyard",
+      "file": "photos/retreat/garden-inner-courtyard/retreat-garden-inner-courtyard-10.png",
+      "original": "The Retreat/retreat-garden-inner-courtyard/retreat-garden-inner-courtyard-view-8.png",
+      "width": 466,
+      "height": 622,
+      "sha1": "44d539dfec67028b85cd4648774595f48d83ce8c",
+      "web": "photos/retreat-garden-inner-courtyard-10.webp"
+    },
+    "retreat-garden-inner-courtyard-11": {
+      "space": "retreat",
+      "area": "garden-inner-courtyard",
+      "file": "photos/retreat/garden-inner-courtyard/retreat-garden-inner-courtyard-11.png",
+      "original": "The Retreat/retreat-garden-inner-courtyard/retreat-garden-inner-courtyard-view-9.png",
+      "width": 465,
+      "height": 625,
+      "sha1": "25f146b260e68e202a858431bac8b20ae4a5910f",
+      "web": "photos/retreat-garden-inner-courtyard-11.webp"
+    },
+    "retreat-garden-inner-courtyard-12": {
+      "space": "retreat",
+      "area": "garden-inner-courtyard",
+      "file": "photos/retreat/garden-inner-courtyard/retreat-garden-inner-courtyard-12.png",
+      "original": "The Retreat/retreat-garden-inner-courtyard/retreat-garden-inner-courtyard-view-10.png",
+      "width": 825,
+      "height": 621,
+      "sha1": "7655ee040d72bbcefcd877185ef520dfe6d5e8bd",
+      "web": "photos/retreat-garden-inner-courtyard-12.webp"
+    },
+    "retreat-garden-inner-courtyard-13": {
+      "space": "retreat",
+      "area": "garden-inner-courtyard",
+      "file": "photos/retreat/garden-inner-courtyard/retreat-garden-inner-courtyard-13.png",
+      "original": "The Retreat/retreat-garden-inner-courtyard/retreat-garden-inner-courtyard-view-11.png",
+      "width": 832,
+      "height": 621,
+      "sha1": "5a135ee5e87c906320b7ae810a88562de9da4cfd",
+      "web": "photos/retreat-garden-inner-courtyard-13.webp"
+    },
+    "retreat-kitchen-01": {
+      "space": "retreat",
+      "area": "kitchen",
+      "file": "photos/retreat/kitchen/retreat-kitchen-01.png",
+      "original": "The Retreat/retreat-kitchen/retreat-kitchen-view-1.png",
+      "width": 467,
+      "height": 620,
+      "sha1": "133c8b63b0d87c5f4f1e0390df4e318198b9c727",
+      "web": "photos/retreat-kitchen-01.webp"
+    },
+    "retreat-kitchen-02": {
+      "space": "retreat",
+      "area": "kitchen",
+      "file": "photos/retreat/kitchen/retreat-kitchen-02.png",
+      "original": "The Retreat/retreat-kitchen/retreat-kitchen-view-2.png",
+      "width": 467,
+      "height": 627,
+      "sha1": "46a41804ca89739545c6fd716cad4a3138263808",
+      "web": "photos/retreat-kitchen-02.webp"
+    },
+    "retreat-kitchen-03": {
+      "space": "retreat",
+      "area": "kitchen",
+      "file": "photos/retreat/kitchen/retreat-kitchen-03.png",
+      "original": "The Retreat/retreat-kitchen/retreat-kitchen-view-3.png",
+      "width": 465,
+      "height": 620,
+      "sha1": "a6954d4e8473d7614272bd457b2153f723d7f5f0",
+      "web": "photos/retreat-kitchen-03.webp"
+    },
+    "retreat-kitchen-04": {
+      "space": "retreat",
+      "area": "kitchen",
+      "file": "photos/retreat/kitchen/retreat-kitchen-04.png",
+      "original": "The Retreat/retreat-kitchen/retreat-kitchen-view-4.png",
+      "width": 462,
+      "height": 626,
+      "sha1": "8c760ccbffc119b6f5218c48aca6b6a73c9e1794",
+      "web": "photos/retreat-kitchen-04.webp"
+    },
+    "retreat-kitchen-05": {
+      "space": "retreat",
+      "area": "kitchen",
+      "file": "photos/retreat/kitchen/retreat-kitchen-05.png",
+      "original": "The Retreat/retreat-kitchen/retreat-kitchen-view-5.png",
+      "width": 467,
+      "height": 622,
+      "sha1": "d25177721e251b5a8ccf80df76b76181146052c3",
+      "web": "photos/retreat-kitchen-05.webp"
+    },
+    "retreat-kitchen-06": {
+      "space": "retreat",
+      "area": "kitchen",
+      "file": "photos/retreat/kitchen/retreat-kitchen-06.png",
+      "original": "The Retreat/retreat-kitchen/retreat-kitchen-view-6.png",
+      "width": 467,
+      "height": 627,
+      "sha1": "366abfe368dddb9d6ef33d85e08af1b294ed904b",
+      "web": "photos/retreat-kitchen-06.webp"
+    },
+    "retreat-kitchen-07": {
+      "space": "retreat",
+      "area": "kitchen",
+      "file": "photos/retreat/kitchen/retreat-kitchen-07.png",
+      "original": "The Retreat/retreat-kitchen/retreat-kitchen-view-7.png",
+      "width": 467,
+      "height": 627,
+      "sha1": "cc1267335e71f9f35bcadd3435df84a5325a63d2",
+      "web": "photos/retreat-kitchen-07.webp"
+    },
+    "retreat-kitchen-08": {
+      "space": "retreat",
+      "area": "kitchen",
+      "file": "photos/retreat/kitchen/retreat-kitchen-08.png",
+      "original": "The Retreat/retreat-kitchen/retreat-kitchen-view-8.png",
+      "width": 467,
+      "height": 620,
+      "sha1": "342ab262607b19c24a2fa8c849d7afd2e064656b",
+      "web": "photos/retreat-kitchen-08.webp"
+    },
+    "retreat-kitchen-09": {
+      "space": "retreat",
+      "area": "kitchen",
+      "file": "photos/retreat/kitchen/retreat-kitchen-09.png",
+      "original": "The Retreat/retreat-kitchen/retreat-kitchen-view-9.png",
+      "width": 832,
+      "height": 626,
+      "sha1": "f5bd883e44acd05f508df3606d27d5e9a106317e",
+      "web": "photos/retreat-kitchen-09.webp"
+    },
+    "retreat-kitchen-10": {
+      "space": "retreat",
+      "area": "kitchen",
+      "file": "photos/retreat/kitchen/retreat-kitchen-10.png",
+      "original": "The Retreat/retreat-kitchen/retreat-kitchen-view-10.png",
+      "width": 465,
+      "height": 621,
+      "sha1": "88107ce1e3f84521c51985289ebe7d905ad02746",
+      "web": "photos/retreat-kitchen-10.webp"
+    },
+    "retreat-kitchen-11": {
+      "space": "retreat",
+      "area": "kitchen",
+      "file": "photos/retreat/kitchen/retreat-kitchen-11.png",
+      "original": "The Retreat/retreat-kitchen/retreat-kitchen-view-11.png",
+      "width": 465,
+      "height": 627,
+      "sha1": "c3786ef61deb81b1e6cdd9308a9121d51e40b046",
+      "web": "photos/retreat-kitchen-11.webp"
+    },
+    "retreat-livingroom-01": {
+      "space": "retreat",
+      "area": "livingroom",
+      "file": "photos/retreat/livingroom/retreat-livingroom-01.png",
+      "original": "The Retreat/retreat-livingroom/retreat-livingroom-view-1.png",
+      "width": 830,
+      "height": 621,
+      "sha1": "1b3839f9b304634db5948cc4793181cbe7e18d48",
+      "web": "photos/retreat-livingroom-01.webp"
+    },
+    "retreat-livingroom-02": {
+      "space": "retreat",
+      "area": "livingroom",
+      "file": "photos/retreat/livingroom/retreat-livingroom-02.png",
+      "original": "The Retreat/retreat-livingroom/retreat-livingroom-view-2.png",
+      "width": 467,
+      "height": 627,
+      "sha1": "db0112a95164565374b29154f9efb93084b2d4f5",
+      "web": "photos/retreat-livingroom-02.webp"
+    },
+    "retreat-livingroom-03": {
+      "space": "retreat",
+      "area": "livingroom",
+      "file": "photos/retreat/livingroom/retreat-livingroom-03.png",
+      "original": "The Retreat/retreat-livingroom/retreat-livingroom-view-3.png",
+      "width": 466,
+      "height": 622,
+      "sha1": "799a1fbc520884325ec9598c2c8fbfaca6111cf9",
+      "web": "photos/retreat-livingroom-03.webp"
+    },
+    "retreat-livingroom-04": {
+      "space": "retreat",
+      "area": "livingroom",
+      "file": "photos/retreat/livingroom/retreat-livingroom-04.png",
+      "original": "The Retreat/retreat-livingroom/retreat-livingroom-view-4.png",
+      "width": 465,
+      "height": 622,
+      "sha1": "81157796167a14edfd6e7dcca4f296e3b8df9765",
+      "web": "photos/retreat-livingroom-04.webp"
+    },
+    "retreat-livingroom-05": {
+      "space": "retreat",
+      "area": "livingroom",
+      "file": "photos/retreat/livingroom/retreat-livingroom-05.png",
+      "original": "The Retreat/retreat-livingroom/retreat-livingroom-view-5.png",
+      "width": 832,
+      "height": 620,
+      "sha1": "3e6a6118592aa9c122d34e52971ff73a04c57f9b",
+      "web": "photos/retreat-livingroom-05.webp"
+    },
+    "retreat-livingroom-06": {
+      "space": "retreat",
+      "area": "livingroom",
+      "file": "photos/retreat/livingroom/retreat-livingroom-06.png",
+      "original": "The Retreat/retreat-livingroom/retreat-livingroom-view-6.png",
+      "width": 467,
+      "height": 617,
+      "sha1": "59b2b0eb3bce851ffa9c96fe2b934910bcc0d137",
+      "web": "photos/retreat-livingroom-06.webp"
+    },
+    "retreat-livingroom-07": {
+      "space": "retreat",
+      "area": "livingroom",
+      "file": "photos/retreat/livingroom/retreat-livingroom-07.png",
+      "original": "The Retreat/retreat-livingroom/retreat-livingroom-view-7.png",
+      "width": 467,
+      "height": 621,
+      "sha1": "0954188335c7797775443cd820d86bb25ee70e3c",
+      "web": "photos/retreat-livingroom-07.webp"
+    },
+    "rooftop-bathroom-01": {
+      "space": "rooftop",
+      "area": "bathroom",
+      "file": "photos/rooftop/bathroom/rooftop-bathroom-01.png",
+      "original": "The Rooftop/rooftop-bathroom/rooftop-bathroom-view-1.png",
+      "width": 836,
+      "height": 621,
+      "sha1": "237c3e2a0a6e088cd987fd3e7b0a7f0905eaf604",
+      "web": "photos/rooftop-bathroom-01.webp"
+    },
+    "rooftop-bathroom-02": {
+      "space": "rooftop",
+      "area": "bathroom",
+      "file": "photos/rooftop/bathroom/rooftop-bathroom-02.png",
+      "original": "The Rooftop/rooftop-bathroom/rooftop-bathroom-view-2.png",
+      "width": 812,
+      "height": 622,
+      "sha1": "a22600f4d8d8363392e0018e5d232e9dd34c3f9e",
+      "web": "photos/rooftop-bathroom-02.webp"
+    },
+    "rooftop-bathroom-03": {
+      "space": "rooftop",
+      "area": "bathroom",
+      "file": "photos/rooftop/bathroom/rooftop-bathroom-03.png",
+      "original": "The Rooftop/rooftop-bathroom/rooftop-bathroom-view-3.png",
+      "width": 465,
+      "height": 620,
+      "sha1": "037fbde980dc85e0c35a311993e8eb64ce3047a9",
+      "web": "photos/rooftop-bathroom-03.webp"
+    },
+    "rooftop-bathroom-04": {
+      "space": "rooftop",
+      "area": "bathroom",
+      "file": "photos/rooftop/bathroom/rooftop-bathroom-04.png",
+      "original": "The Rooftop/rooftop-bathroom/rooftop-bathroom-view-4.png",
+      "width": 466,
+      "height": 622,
+      "sha1": "9cd45555f98482f7b65801074eb152412a7933e6",
+      "web": "photos/rooftop-bathroom-04.webp"
+    },
+    "rooftop-bathroom-05": {
+      "space": "rooftop",
+      "area": "bathroom",
+      "file": "photos/rooftop/bathroom/rooftop-bathroom-05.png",
+      "original": "The Rooftop/rooftop-bathroom/rooftop-bathroom-view-5.png",
+      "width": 467,
+      "height": 627,
+      "sha1": "3871817f032b0ca13c356ad765902bb871278a4f",
+      "web": "photos/rooftop-bathroom-05.webp"
+    },
+    "rooftop-bathroom-06": {
+      "space": "rooftop",
+      "area": "bathroom",
+      "file": "photos/rooftop/bathroom/rooftop-bathroom-06.png",
+      "original": "The Rooftop/rooftop-bathroom/rooftop-bathroom-view-6.png",
+      "width": 466,
+      "height": 621,
+      "sha1": "fce91b16b9e0fd6d9681cbd71acbe066960b0c75",
+      "web": "photos/rooftop-bathroom-06.webp"
+    },
+    "rooftop-bathroom-07": {
+      "space": "rooftop",
+      "area": "bathroom",
+      "file": "photos/rooftop/bathroom/rooftop-bathroom-07.png",
+      "original": "The Rooftop/rooftop-bathroom/rooftop-bathroom-view-7.png",
+      "width": 832,
+      "height": 622,
+      "sha1": "da13fbd7d64eef6d3b214c292b1cc22310164ca3",
+      "web": "photos/rooftop-bathroom-07.webp"
+    },
+    "rooftop-bedroom-livingspace-01": {
+      "space": "rooftop",
+      "area": "bedroom-livingspace",
+      "file": "photos/rooftop/bedroom-livingspace/rooftop-bedroom-livingspace-01.png",
+      "original": "The Rooftop/rooftop-bedroom-livingspace/rooftop-bedroom-livingspace-view-1.png",
+      "width": 467,
+      "height": 625,
+      "sha1": "e8ef258bdff6c434db226ffbf03f5a2d1ae587c8",
+      "web": "photos/rooftop-bedroom-livingspace-01.webp"
+    },
+    "rooftop-bedroom-livingspace-02": {
+      "space": "rooftop",
+      "area": "bedroom-livingspace",
+      "file": "photos/rooftop/bedroom-livingspace/rooftop-bedroom-livingspace-02.png",
+      "original": "The Rooftop/rooftop-bedroom-livingspace/rooftop-bedroom-livingspace-view-2.png",
+      "width": 462,
+      "height": 622,
+      "sha1": "55311d95b42ba02872d20f43aaae0ea900886768",
+      "web": "photos/rooftop-bedroom-livingspace-02.webp"
+    },
+    "rooftop-bedroom-livingspace-03": {
+      "space": "rooftop",
+      "area": "bedroom-livingspace",
+      "file": "photos/rooftop/bedroom-livingspace/rooftop-bedroom-livingspace-03.png",
+      "original": "The Rooftop/rooftop-bedroom-livingspace/rooftop-bedroom-livingspace-view-3.png",
+      "width": 467,
+      "height": 626,
+      "sha1": "754d190da0007709912d19ffe05eaaa3124289e5",
+      "web": "photos/rooftop-bedroom-livingspace-03.webp"
+    },
+    "rooftop-bedroom-livingspace-04": {
+      "space": "rooftop",
+      "area": "bedroom-livingspace",
+      "file": "photos/rooftop/bedroom-livingspace/rooftop-bedroom-livingspace-04.png",
+      "original": "The Rooftop/rooftop-bedroom-livingspace/rooftop-bedroom-livingspace-view-4.png",
+      "width": 830,
+      "height": 626,
+      "sha1": "d3341c084fdb3419407a5a51b04961de20b2c76e",
+      "web": "photos/rooftop-bedroom-livingspace-04.webp"
+    },
+    "rooftop-bedroom-livingspace-05": {
+      "space": "rooftop",
+      "area": "bedroom-livingspace",
+      "file": "photos/rooftop/bedroom-livingspace/rooftop-bedroom-livingspace-05.png",
+      "original": "The Rooftop/rooftop-bedroom-livingspace/rooftop-bedroom-livingspace-view-5.png",
+      "width": 467,
+      "height": 625,
+      "sha1": "53504aed24e8c96a67c4b89d8ac7b8e7b941090c",
+      "web": "photos/rooftop-bedroom-livingspace-05.webp"
+    },
+    "rooftop-bedroom-livingspace-06": {
+      "space": "rooftop",
+      "area": "bedroom-livingspace",
+      "file": "photos/rooftop/bedroom-livingspace/rooftop-bedroom-livingspace-06.png",
+      "original": "The Rooftop/rooftop-bedroom-livingspace/rooftop-bedroom-livingspace-view-6.png",
+      "width": 462,
+      "height": 621,
+      "sha1": "ddcff5d147ffc84fe95246a874d5383f4c26e453",
+      "web": "photos/rooftop-bedroom-livingspace-06.webp"
+    },
+    "rooftop-bedroom-livingspace-07": {
+      "space": "rooftop",
+      "area": "bedroom-livingspace",
+      "file": "photos/rooftop/bedroom-livingspace/rooftop-bedroom-livingspace-07.png",
+      "original": "The Rooftop/rooftop-bedroom-livingspace/rooftop-bedroom-livingspace-view-7.png",
+      "width": 467,
+      "height": 627,
+      "sha1": "cbaceed44ceb739a7baf535edcf47b3d87b1ba16",
+      "web": "photos/rooftop-bedroom-livingspace-07.webp"
+    },
+    "rooftop-bedroom-livingspace-08": {
+      "space": "rooftop",
+      "area": "bedroom-livingspace",
+      "file": "photos/rooftop/bedroom-livingspace/rooftop-bedroom-livingspace-08.png",
+      "original": "The Rooftop/rooftop-bedroom-livingspace/rooftop-bedroom-livingspace-view-8.png",
+      "width": 835,
+      "height": 622,
+      "sha1": "b6834c9ed2b83eb9354c469a17c73352d126f674",
+      "web": "photos/rooftop-bedroom-livingspace-08.webp"
+    },
+    "rooftop-bedroom-livingspace-09": {
+      "space": "rooftop",
+      "area": "bedroom-livingspace",
+      "file": "photos/rooftop/bedroom-livingspace/rooftop-bedroom-livingspace-09.png",
+      "original": "The Rooftop/rooftop-bedroom-livingspace/rooftop-bedroom-livingspace-view-9.png",
+      "width": 466,
+      "height": 620,
+      "sha1": "5b5f3ad339f6860f8e575a14a4eebb8e8c44bc1a",
+      "web": "photos/rooftop-bedroom-livingspace-09.webp"
+    },
+    "rooftop-bedroom-livingspace-10": {
+      "space": "rooftop",
+      "area": "bedroom-livingspace",
+      "file": "photos/rooftop/bedroom-livingspace/rooftop-bedroom-livingspace-10.png",
+      "original": "The Rooftop/rooftop-bedroom-livingspace/rooftop-bedroom-livingspace-view-10.png",
+      "width": 832,
+      "height": 617,
+      "sha1": "9f6e5bb7251d1628621e4344748ad3641d9cf3cc",
+      "web": "photos/rooftop-bedroom-livingspace-10.webp"
+    },
+    "rooftop-bedroom-livingspace-11": {
+      "space": "rooftop",
+      "area": "bedroom-livingspace",
+      "file": "photos/rooftop/bedroom-livingspace/rooftop-bedroom-livingspace-11.png",
+      "original": "The Rooftop/rooftop-bedroom-livingspace/rooftop-bedroom-livingspace-view-11.png",
+      "width": 832,
+      "height": 617,
+      "sha1": "1653ab7c7425171fb406f64b3ed6c7131f37e534",
+      "web": "photos/rooftop-bedroom-livingspace-11.webp"
+    },
+    "rooftop-garden-01": {
+      "space": "rooftop",
+      "area": "garden",
+      "file": "photos/rooftop/garden/rooftop-garden-01.png",
+      "original": "The Rooftop/rooftop-garden/rooftop-garden-view-1.png",
+      "width": 467,
+      "height": 622,
+      "sha1": "6f5e0477d61b5c99a9de84baea13327b2a060210",
+      "web": "photos/rooftop-garden-01.webp"
+    },
+    "rooftop-garden-02": {
+      "space": "rooftop",
+      "area": "garden",
+      "file": "photos/rooftop/garden/rooftop-garden-02.png",
+      "original": "The Rooftop/rooftop-garden/rooftop-garden-view-2.png",
+      "width": 832,
+      "height": 621,
+      "sha1": "890f83adda5c0388c74ce07379a5d43a3db5a635",
+      "web": "photos/rooftop-garden-02.webp"
+    },
+    "rooftop-garden-03": {
+      "space": "rooftop",
+      "area": "garden",
+      "file": "photos/rooftop/garden/rooftop-garden-03.png",
+      "original": "The Rooftop/rooftop-garden/rooftop-garden-view-3.png",
+      "width": 467,
+      "height": 622,
+      "sha1": "d8a6a454b353b673cde6490ef8b076acc35b17ab",
+      "web": "photos/rooftop-garden-03.webp"
+    },
+    "rooftop-garden-04": {
+      "space": "rooftop",
+      "area": "garden",
+      "file": "photos/rooftop/garden/rooftop-garden-04.png",
+      "original": "The Rooftop/rooftop-garden/rooftop-garden-view-4.png",
+      "width": 832,
+      "height": 625,
+      "sha1": "c5236029762a46c2775ff183bbdc392f35c31410",
+      "web": "photos/rooftop-garden-04.webp"
+    },
+    "rooftop-garden-05": {
+      "space": "rooftop",
+      "area": "garden",
+      "file": "photos/rooftop/garden/rooftop-garden-05.png",
+      "original": "The Rooftop/rooftop-garden/rooftop-garden-view-5.png",
+      "width": 832,
+      "height": 626,
+      "sha1": "b3a1ee41d593d18eb675fd3c51bc680275a4179f",
+      "web": "photos/rooftop-garden-05.webp"
+    },
+    "rooftop-garden-06": {
+      "space": "rooftop",
+      "area": "garden",
+      "file": "photos/rooftop/garden/rooftop-garden-06.png",
+      "original": "The Rooftop/rooftop-garden/rooftop-garden-view-6.png",
+      "width": 832,
+      "height": 626,
+      "sha1": "e83c0a9f9e92e6983b4330f6687c7dbc332ed8c4",
+      "web": "photos/rooftop-garden-06.webp"
+    },
+    "rooftop-garden-07": {
+      "space": "rooftop",
+      "area": "garden",
+      "file": "photos/rooftop/garden/rooftop-garden-07.png",
+      "original": "The Rooftop/rooftop-garden/rooftop-garden-view-7.png",
+      "width": 465,
+      "height": 622,
+      "sha1": "2bcefb6bf113bd6c7cc5aa476dc256ba5e46de99",
+      "web": "photos/rooftop-garden-07.webp"
+    },
+    "rooftop-garden-08": {
+      "space": "rooftop",
+      "area": "garden",
+      "file": "photos/rooftop/garden/rooftop-garden-08.png",
+      "original": "The Rooftop/rooftop-garden/rooftop-garden-view-8.png",
+      "width": 467,
+      "height": 622,
+      "sha1": "bf8ade2fe56fc953cf3286be1fb0edf94ae2ae7b",
+      "web": "photos/rooftop-garden-08.webp"
+    },
+    "rooftop-garden-09": {
+      "space": "rooftop",
+      "area": "garden",
+      "file": "photos/rooftop/garden/rooftop-garden-09.png",
+      "original": "The Rooftop/rooftop-garden/rooftop-garden-view-9.png",
+      "width": 510,
+      "height": 622,
+      "sha1": "d6783b9bacbe479fd25e32378b04fdecffd9e64e",
+      "web": "photos/rooftop-garden-09.webp"
+    },
+    "rooftop-garden-10": {
+      "space": "rooftop",
+      "area": "garden",
+      "file": "photos/rooftop/garden/rooftop-garden-10.png",
+      "original": "The Rooftop/rooftop-garden/rooftop-garden-view-10.png",
+      "width": 482,
+      "height": 622,
+      "sha1": "1c92d3cf51455b330275309518575b589b2312af",
+      "web": "photos/rooftop-garden-10.webp"
+    },
+    "rooftop-garden-11": {
+      "space": "rooftop",
+      "area": "garden",
+      "file": "photos/rooftop/garden/rooftop-garden-11.png",
+      "original": "The Rooftop/rooftop-garden/rooftop-garden-view-11.png",
+      "width": 466,
+      "height": 625,
+      "sha1": "35dc48ce9bcbee955bc87332d83ead26e51fc106",
+      "web": "photos/rooftop-garden-11.webp"
+    },
+    "rooftop-garden-12": {
+      "space": "rooftop",
+      "area": "garden",
+      "file": "photos/rooftop/garden/rooftop-garden-12.png",
+      "original": "The Rooftop/rooftop-garden/rooftop-garden-view-12.png",
+      "width": 472,
+      "height": 626,
+      "sha1": "7fd5a20a85f1392cb8880a65f3d45779f6ac922b",
+      "web": "photos/rooftop-garden-12.webp"
+    },
+    "rooftop-garden-13": {
+      "space": "rooftop",
+      "area": "garden",
+      "file": "photos/rooftop/garden/rooftop-garden-13.png",
+      "original": "The Rooftop/rooftop-garden/rooftop-garden-view-13.png",
+      "width": 832,
+      "height": 621,
+      "sha1": "b9bb77d59fde770ab2d9559a8d9d56d90cbde925",
+      "web": "photos/rooftop-garden-13.webp"
+    },
+    "rooftop-garden-14": {
+      "space": "rooftop",
+      "area": "garden",
+      "file": "photos/rooftop/garden/rooftop-garden-14.png",
+      "original": "The Rooftop/rooftop-garden/rooftop-garden-view-14.png",
+      "width": 467,
+      "height": 622,
+      "sha1": "d29e38bbd94980dc40cc8df0a4ee1b263d061636",
+      "web": "photos/rooftop-garden-14.webp"
+    },
+    "rooftop-garden-15": {
+      "space": "rooftop",
+      "area": "garden",
+      "file": "photos/rooftop/garden/rooftop-garden-15.png",
+      "original": "The Rooftop/rooftop-garden/rooftop-garden-view-15.png",
+      "width": 466,
+      "height": 621,
+      "sha1": "8f975a4cea31083e47bfe7638ee5f6f554bcf18a",
+      "web": "photos/rooftop-garden-15.webp"
+    },
+    "rooftop-garden-16": {
+      "space": "rooftop",
+      "area": "garden",
+      "file": "photos/rooftop/garden/rooftop-garden-16.png",
+      "original": "The Rooftop/rooftop-garden/rooftop-garden-view-16.png",
+      "width": 462,
+      "height": 622,
+      "sha1": "d8571ceb6179fc3c99a2968a8deb5b098490c730",
+      "web": "photos/rooftop-garden-16.webp"
+    },
+    "rooftop-garden-17": {
+      "space": "rooftop",
+      "area": "garden",
+      "file": "photos/rooftop/garden/rooftop-garden-17.png",
+      "original": "The Rooftop/rooftop-garden/rooftop-garden-view-17.png",
+      "width": 466,
+      "height": 625,
+      "sha1": "620460946280efe4e29cc1a85901fa133e6a4d94",
+      "web": "photos/rooftop-garden-17.webp"
+    },
+    "rooftop-garden-18": {
+      "space": "rooftop",
+      "area": "garden",
+      "file": "photos/rooftop/garden/rooftop-garden-18.png",
+      "original": "The Rooftop/rooftop-garden/rooftop-garden-view-18.png",
+      "width": 465,
+      "height": 622,
+      "sha1": "b914374a71c84bc55b3a0e4a11990c9748dce40e",
+      "web": "photos/rooftop-garden-18.webp"
+    },
+    "rooftop-garden-19": {
+      "space": "rooftop",
+      "area": "garden",
+      "file": "photos/rooftop/garden/rooftop-garden-19.png",
+      "original": "The Rooftop/rooftop-garden/rooftop-garden-view-19.png",
+      "width": 465,
+      "height": 622,
+      "sha1": "f9cc7e7c538287d1d9877c379b31b7a8d0cb0712",
+      "web": "photos/rooftop-garden-19.webp"
+    },
+    "rooftop-garden-20": {
+      "space": "rooftop",
+      "area": "garden",
+      "file": "photos/rooftop/garden/rooftop-garden-20.png",
+      "original": "The Rooftop/rooftop-garden/rooftop-garden-view-20.png",
+      "width": 832,
+      "height": 617,
+      "sha1": "5efc8933e36be84f43675994a7a69b6c51c1daf9",
+      "web": "photos/rooftop-garden-20.webp"
+    },
+    "rooftop-garden-21": {
+      "space": "rooftop",
+      "area": "garden",
+      "file": "photos/rooftop/garden/rooftop-garden-21.png",
+      "original": "The Rooftop/rooftop-garden/rooftop-garden-view-21.png",
+      "width": 466,
+      "height": 621,
+      "sha1": "7a5455fcffe29482e8fe80b5751905b323702372",
+      "web": "photos/rooftop-garden-21.webp"
+    },
+    "rooftop-garden-22": {
+      "space": "rooftop",
+      "area": "garden",
+      "file": "photos/rooftop/garden/rooftop-garden-22.png",
+      "original": "The Rooftop/rooftop-garden/rooftop-garden-view-22.png",
+      "width": 831,
+      "height": 622,
+      "sha1": "6df80b39345154cb59f11d9d1a594c71a71aeeb9",
+      "web": "photos/rooftop-garden-22.webp"
+    },
+    "rooftop-garden-23": {
+      "space": "rooftop",
+      "area": "garden",
+      "file": "photos/rooftop/garden/rooftop-garden-23.png",
+      "original": "The Rooftop/rooftop-garden/rooftop-garden-view-23.png",
+      "width": 466,
+      "height": 625,
+      "sha1": "94586c92bcc271c121dcd3b02000c1dd3a48ebf9",
+      "web": "photos/rooftop-garden-23.webp"
+    },
+    "rooftop-garden-24": {
+      "space": "rooftop",
+      "area": "garden",
+      "file": "photos/rooftop/garden/rooftop-garden-24.png",
+      "original": "The Rooftop/rooftop-garden/rooftop-garden-view-24.png",
+      "width": 811,
+      "height": 626,
+      "sha1": "a66511ff495a686aae19f58174b476092aef2cde",
+      "web": "photos/rooftop-garden-24.webp"
+    },
+    "rooftop-garden-25": {
+      "space": "rooftop",
+      "area": "garden",
+      "file": "photos/rooftop/garden/rooftop-garden-25.png",
+      "original": "The Rooftop/rooftop-garden/rooftop-garden-view-25.png",
+      "width": 467,
+      "height": 627,
+      "sha1": "a6e03cf03bc761109b27f6d3e0180ecffe5d3587",
+      "web": "photos/rooftop-garden-25.webp"
+    },
+    "rooftop-garden-26": {
+      "space": "rooftop",
+      "area": "garden",
+      "file": "photos/rooftop/garden/rooftop-garden-26.png",
+      "original": "The Rooftop/rooftop-garden/rooftop-garden-view-26.png",
+      "width": 502,
+      "height": 625,
+      "sha1": "9a00d24088fe6f06db682c0ebe1be3ad63962701",
+      "web": "photos/rooftop-garden-26.webp"
+    },
+    "rooftop-garden-27": {
+      "space": "rooftop",
+      "area": "garden",
+      "file": "photos/rooftop/garden/rooftop-garden-27.png",
+      "original": "The Rooftop/rooftop-garden/rooftop-garden-view-27.png",
+      "width": 466,
+      "height": 625,
+      "sha1": "becaa6469116cb768a4b9ea32f7969d23c01dc38",
+      "web": "photos/rooftop-garden-27.webp"
+    },
+    "rooftop-garden-28": {
+      "space": "rooftop",
+      "area": "garden",
+      "file": "photos/rooftop/garden/rooftop-garden-28.png",
+      "original": "The Rooftop/rooftop-garden/rooftop-garden-view-28.png",
+      "width": 466,
+      "height": 626,
+      "sha1": "36502e180a5a88ca9088cb94e08b6dcf0d80efac",
+      "web": "photos/rooftop-garden-28.webp"
+    },
+    "rooftop-garden-29": {
+      "space": "rooftop",
+      "area": "garden",
+      "file": "photos/rooftop/garden/rooftop-garden-29.png",
+      "original": "The Rooftop/rooftop-garden/rooftop-garden-view-29.png",
+      "width": 827,
+      "height": 622,
+      "sha1": "9ce35fa8594defbced144f2d3a4699668dd4af84",
+      "web": "photos/rooftop-garden-29.webp"
+    },
+    "rooftop-garden-30": {
+      "space": "rooftop",
+      "area": "garden",
+      "file": "photos/rooftop/garden/rooftop-garden-30.png",
+      "original": "The Rooftop/rooftop-garden/rooftop-garden-view-30.png",
+      "width": 832,
+      "height": 625,
+      "sha1": "76e438c6a5264c971e4e413e153efd72644f766f",
+      "web": "photos/rooftop-garden-30.webp"
+    },
+    "rooftop-garden-31": {
+      "space": "rooftop",
+      "area": "garden",
+      "file": "photos/rooftop/garden/rooftop-garden-31.png",
+      "original": "The Rooftop/rooftop-garden/rooftop-garden-view-31.png",
+      "width": 832,
+      "height": 616,
+      "sha1": "632715bfdf79e5706e0e15c49b6417d198d563b7",
+      "web": "photos/rooftop-garden-31.webp"
+    },
+    "rooftop-garden-32": {
+      "space": "rooftop",
+      "area": "garden",
+      "file": "photos/rooftop/garden/rooftop-garden-32.png",
+      "original": "The Rooftop/rooftop-garden/rooftop-garden-view-32.png",
+      "width": 827,
+      "height": 617,
+      "sha1": "6f6f79b258c2b9b8ad5e0fe121cd29d26da7a991",
+      "web": "photos/rooftop-garden-32.webp"
+    },
+    "rooftop-kitchen-01": {
+      "space": "rooftop",
+      "area": "kitchen",
+      "file": "photos/rooftop/kitchen/rooftop-kitchen-01.png",
+      "original": "The Rooftop/rooftop-kitchen/rooftop-kitchen-view-1.png",
+      "width": 832,
+      "height": 622,
+      "sha1": "85efca0dc55d8f1084bf1fe5409d5aa3f7895a1c",
+      "web": "photos/rooftop-kitchen-01.webp"
+    },
+    "rooftop-kitchen-02": {
+      "space": "rooftop",
+      "area": "kitchen",
+      "file": "photos/rooftop/kitchen/rooftop-kitchen-02.png",
+      "original": "The Rooftop/rooftop-kitchen/rooftop-kitchen-view-2.png",
+      "width": 466,
+      "height": 621,
+      "sha1": "9f52fe1066a9d82d6298b8f7d8bf18d2ce620e03",
+      "web": "photos/rooftop-kitchen-02.webp"
+    },
+    "rooftop-kitchen-03": {
+      "space": "rooftop",
+      "area": "kitchen",
+      "file": "photos/rooftop/kitchen/rooftop-kitchen-03.png",
+      "original": "The Rooftop/rooftop-kitchen/rooftop-kitchen-view-3.png",
+      "width": 467,
+      "height": 626,
+      "sha1": "4bce363fcd361963bd5f42323aac473fbf8e090e",
+      "web": "photos/rooftop-kitchen-03.webp"
+    },
+    "rooftop-kitchen-04": {
+      "space": "rooftop",
+      "area": "kitchen",
+      "file": "photos/rooftop/kitchen/rooftop-kitchen-04.png",
+      "original": "The Rooftop/rooftop-kitchen/rooftop-kitchen-view-4.png",
+      "width": 465,
+      "height": 622,
+      "sha1": "73f60a2eb122a1747e995b4e2128e15805466855",
+      "web": "photos/rooftop-kitchen-04.webp"
+    },
+    "rooftop-kitchen-05": {
+      "space": "rooftop",
+      "area": "kitchen",
+      "file": "photos/rooftop/kitchen/rooftop-kitchen-05.png",
+      "original": "The Rooftop/rooftop-kitchen/rooftop-kitchen-view-5.png",
+      "width": 467,
+      "height": 622,
+      "sha1": "37a7ed750f037a3a198466dce0d80238d128ea8c",
+      "web": "photos/rooftop-kitchen-05.webp"
+    }
+  },
+  "generated": {
+    "compound-map": {
+      "kind": "illustration",
+      "file": "gen/compound-map.webp",
+      "description": "Illustrated compound map, the chosen version. Positions approximate.",
+      "width": 1600,
+      "height": 1195
+    },
+    "map-2": {
+      "kind": "illustration",
+      "file": "gen/map-2.webp",
+      "description": "Schematic compound map, the alternative.",
+      "width": 1200,
+      "height": 896
+    },
+    "film-walk-in-start": {
+      "kind": "motion",
+      "file": "gen/film-walk-in-start.webp",
+      "description": "Start frame of the walk-in film: the brick path photo widened to 16:9.",
+      "width": 1600,
+      "height": 893
+    },
+    "texture-leaf": {
+      "kind": "texture",
+      "file": "gen/texture-leaf.webp",
+      "description": "Seamless leaf texture",
+      "width": 800,
+      "height": 800
+    },
+    "texture-brass": {
+      "kind": "texture",
+      "file": "gen/texture-brass.webp",
+      "description": "Seamless brass texture",
+      "width": 800,
+      "height": 800
+    },
+    "texture-red-oxide": {
+      "kind": "texture",
+      "file": "gen/texture-red-oxide.webp",
+      "description": "Seamless red oxide texture",
+      "width": 800,
+      "height": 800
+    },
+    "spot-teacup-swing": {
+      "kind": "illustration",
+      "file": "gen/spot-teacup-swing.webp",
+      "description": "teacup swing spot illustration",
+      "width": 386,
+      "height": 344
+    },
+    "spot-squirrel": {
+      "kind": "illustration",
+      "file": "gen/spot-squirrel.webp",
+      "description": "squirrel spot illustration",
+      "width": 274,
+      "height": 276
+    },
+    "spot-brass-key": {
+      "kind": "illustration",
+      "file": "gen/spot-brass-key.webp",
+      "description": "brass key spot illustration",
+      "width": 246,
+      "height": 292
+    },
+    "spot-copper-pod-tree": {
+      "kind": "illustration",
+      "file": "gen/spot-copper-pod-tree.webp",
+      "description": "copper pod tree spot illustration",
+      "width": 295,
+      "height": 412
+    },
+    "loop-walkway": {
+      "kind": "motion",
+      "file": "gen/loop-walkway.mp4",
+      "description": "loop walkway, H.264, muted"
+    },
+    "loop-rooftop": {
+      "kind": "motion",
+      "file": "gen/loop-rooftop.mp4",
+      "description": "loop rooftop, H.264, muted"
+    },
+    "loop-courtyard": {
+      "kind": "motion",
+      "file": "gen/loop-courtyard.mp4",
+      "description": "loop courtyard, H.264, muted"
+    },
+    "loop-retreat": {
+      "kind": "motion",
+      "file": "gen/loop-retreat.mp4",
+      "description": "loop retreat, H.264, muted"
+    },
+    "film-walk-in": {
+      "kind": "motion",
+      "file": "gen/film-walk-in.mp4",
+      "description": "film walk in, H.264, muted"
+    }
+  },
+  "held": {
+    "cottage-garden-08": "Same photo as nook-garden-02. Hidden until the family confirms which space it shows.",
+    "nook-garden-02": "Same photo as cottage-garden-08. Hidden until the family confirms which space it shows."
+  }
+}
